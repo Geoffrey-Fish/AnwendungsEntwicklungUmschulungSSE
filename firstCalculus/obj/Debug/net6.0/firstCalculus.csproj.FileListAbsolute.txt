@@ -1,0 +1,15 @@
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\firstCalculus\obj\Debug\net6.0\firstCalculus.csproj.AssemblyReference.cache
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\firstCalculus\obj\Debug\net6.0\firstCalculus.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\firstCalculus\obj\Debug\net6.0\firstCalculus.AssemblyInfoInputs.cache
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\firstCalculus\obj\Debug\net6.0\firstCalculus.AssemblyInfo.cs
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\firstCalculus\obj\Debug\net6.0\firstCalculus.csproj.CoreCompileInputs.cache
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\firstCalculus\bin\Debug\net6.0\firstCalculus.exe
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\firstCalculus\bin\Debug\net6.0\firstCalculus.deps.json
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\firstCalculus\bin\Debug\net6.0\firstCalculus.runtimeconfig.json
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\firstCalculus\bin\Debug\net6.0\firstCalculus.dll
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\firstCalculus\bin\Debug\net6.0\firstCalculus.pdb
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\firstCalculus\obj\Debug\net6.0\firstCalculus.dll
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\firstCalculus\obj\Debug\net6.0\refint\firstCalculus.dll
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\firstCalculus\obj\Debug\net6.0\firstCalculus.pdb
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\firstCalculus\obj\Debug\net6.0\firstCalculus.genruntimeconfig.cache
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\firstCalculus\obj\Debug\net6.0\ref\firstCalculus.dll

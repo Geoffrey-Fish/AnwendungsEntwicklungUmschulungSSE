@@ -1,0 +1,15 @@
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\plz\bin\Debug\net6.0\plz.exe
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\plz\bin\Debug\net6.0\plz.deps.json
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\plz\bin\Debug\net6.0\plz.runtimeconfig.json
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\plz\bin\Debug\net6.0\plz.dll
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\plz\bin\Debug\net6.0\plz.pdb
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\plz\obj\Debug\net6.0\plz.csproj.AssemblyReference.cache
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\plz\obj\Debug\net6.0\plz.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\plz\obj\Debug\net6.0\plz.AssemblyInfoInputs.cache
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\plz\obj\Debug\net6.0\plz.AssemblyInfo.cs
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\plz\obj\Debug\net6.0\plz.csproj.CoreCompileInputs.cache
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\plz\obj\Debug\net6.0\plz.dll
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\plz\obj\Debug\net6.0\refint\plz.dll
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\plz\obj\Debug\net6.0\plz.pdb
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\plz\obj\Debug\net6.0\plz.genruntimeconfig.cache
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\plz\obj\Debug\net6.0\ref\plz.dll

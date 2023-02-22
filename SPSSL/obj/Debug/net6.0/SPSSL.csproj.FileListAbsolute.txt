@@ -1,0 +1,15 @@
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\SPSSL\bin\Debug\net6.0\SPSSL.exe
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\SPSSL\bin\Debug\net6.0\SPSSL.deps.json
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\SPSSL\bin\Debug\net6.0\SPSSL.runtimeconfig.json
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\SPSSL\bin\Debug\net6.0\SPSSL.dll
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\SPSSL\bin\Debug\net6.0\SPSSL.pdb
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\SPSSL\obj\Debug\net6.0\SPSSL.csproj.AssemblyReference.cache
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\SPSSL\obj\Debug\net6.0\SPSSL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\SPSSL\obj\Debug\net6.0\SPSSL.AssemblyInfoInputs.cache
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\SPSSL\obj\Debug\net6.0\SPSSL.AssemblyInfo.cs
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\SPSSL\obj\Debug\net6.0\SPSSL.csproj.CoreCompileInputs.cache
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\SPSSL\obj\Debug\net6.0\SPSSL.dll
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\SPSSL\obj\Debug\net6.0\refint\SPSSL.dll
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\SPSSL\obj\Debug\net6.0\SPSSL.pdb
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\SPSSL\obj\Debug\net6.0\SPSSL.genruntimeconfig.cache
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\SPSSL\obj\Debug\net6.0\ref\SPSSL.dll

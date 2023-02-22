@@ -1,0 +1,5 @@
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\bubblemichi\obj\Debug\net6.0\bubblemichi.csproj.AssemblyReference.cache
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\bubblemichi\obj\Debug\net6.0\bubblemichi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\bubblemichi\obj\Debug\net6.0\bubblemichi.AssemblyInfoInputs.cache
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\bubblemichi\obj\Debug\net6.0\bubblemichi.AssemblyInfo.cs
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\bubblemichi\obj\Debug\net6.0\bubblemichi.csproj.CoreCompileInputs.cache

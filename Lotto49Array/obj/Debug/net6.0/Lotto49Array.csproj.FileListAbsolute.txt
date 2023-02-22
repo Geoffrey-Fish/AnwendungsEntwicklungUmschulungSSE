@@ -1,0 +1,15 @@
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\Lotto49Array\bin\Debug\net6.0\Lotto49Array.exe
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\Lotto49Array\bin\Debug\net6.0\Lotto49Array.deps.json
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\Lotto49Array\bin\Debug\net6.0\Lotto49Array.runtimeconfig.json
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\Lotto49Array\bin\Debug\net6.0\Lotto49Array.dll
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\Lotto49Array\bin\Debug\net6.0\Lotto49Array.pdb
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\Lotto49Array\obj\Debug\net6.0\Lotto49Array.csproj.AssemblyReference.cache
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\Lotto49Array\obj\Debug\net6.0\Lotto49Array.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\Lotto49Array\obj\Debug\net6.0\Lotto49Array.AssemblyInfoInputs.cache
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\Lotto49Array\obj\Debug\net6.0\Lotto49Array.AssemblyInfo.cs
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\Lotto49Array\obj\Debug\net6.0\Lotto49Array.csproj.CoreCompileInputs.cache
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\Lotto49Array\obj\Debug\net6.0\Lotto49Array.dll
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\Lotto49Array\obj\Debug\net6.0\refint\Lotto49Array.dll
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\Lotto49Array\obj\Debug\net6.0\Lotto49Array.pdb
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\Lotto49Array\obj\Debug\net6.0\Lotto49Array.genruntimeconfig.cache
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\Lotto49Array\obj\Debug\net6.0\ref\Lotto49Array.dll

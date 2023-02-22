@@ -1,0 +1,15 @@
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\Doorman\bin\Debug\net6.0\Doorman.exe
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\Doorman\bin\Debug\net6.0\Doorman.deps.json
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\Doorman\bin\Debug\net6.0\Doorman.runtimeconfig.json
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\Doorman\bin\Debug\net6.0\Doorman.dll
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\Doorman\bin\Debug\net6.0\Doorman.pdb
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\Doorman\obj\Debug\net6.0\Doorman.csproj.AssemblyReference.cache
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\Doorman\obj\Debug\net6.0\Doorman.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\Doorman\obj\Debug\net6.0\Doorman.AssemblyInfoInputs.cache
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\Doorman\obj\Debug\net6.0\Doorman.AssemblyInfo.cs
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\Doorman\obj\Debug\net6.0\Doorman.csproj.CoreCompileInputs.cache
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\Doorman\obj\Debug\net6.0\Doorman.dll
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\Doorman\obj\Debug\net6.0\refint\Doorman.dll
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\Doorman\obj\Debug\net6.0\Doorman.pdb
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\Doorman\obj\Debug\net6.0\Doorman.genruntimeconfig.cache
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\Doorman\obj\Debug\net6.0\ref\Doorman.dll

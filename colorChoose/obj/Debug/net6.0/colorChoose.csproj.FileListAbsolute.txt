@@ -1,0 +1,15 @@
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\colorChoose\obj\Debug\net6.0\colorChoose.csproj.AssemblyReference.cache
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\colorChoose\obj\Debug\net6.0\colorChoose.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\colorChoose\obj\Debug\net6.0\colorChoose.AssemblyInfoInputs.cache
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\colorChoose\obj\Debug\net6.0\colorChoose.AssemblyInfo.cs
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\colorChoose\obj\Debug\net6.0\colorChoose.csproj.CoreCompileInputs.cache
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\colorChoose\bin\Debug\net6.0\colorChoose.exe
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\colorChoose\bin\Debug\net6.0\colorChoose.deps.json
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\colorChoose\bin\Debug\net6.0\colorChoose.runtimeconfig.json
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\colorChoose\bin\Debug\net6.0\colorChoose.dll
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\colorChoose\bin\Debug\net6.0\colorChoose.pdb
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\colorChoose\obj\Debug\net6.0\colorChoose.dll
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\colorChoose\obj\Debug\net6.0\refint\colorChoose.dll
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\colorChoose\obj\Debug\net6.0\colorChoose.pdb
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\colorChoose\obj\Debug\net6.0\colorChoose.genruntimeconfig.cache
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\colorChoose\obj\Debug\net6.0\ref\colorChoose.dll

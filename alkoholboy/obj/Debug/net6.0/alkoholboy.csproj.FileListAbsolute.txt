@@ -1,0 +1,15 @@
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\alkoholboy\bin\Debug\net6.0\alkoholboy.exe
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\alkoholboy\bin\Debug\net6.0\alkoholboy.deps.json
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\alkoholboy\bin\Debug\net6.0\alkoholboy.runtimeconfig.json
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\alkoholboy\bin\Debug\net6.0\alkoholboy.dll
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\alkoholboy\bin\Debug\net6.0\alkoholboy.pdb
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\alkoholboy\obj\Debug\net6.0\alkoholboy.csproj.AssemblyReference.cache
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\alkoholboy\obj\Debug\net6.0\alkoholboy.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\alkoholboy\obj\Debug\net6.0\alkoholboy.AssemblyInfoInputs.cache
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\alkoholboy\obj\Debug\net6.0\alkoholboy.AssemblyInfo.cs
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\alkoholboy\obj\Debug\net6.0\alkoholboy.csproj.CoreCompileInputs.cache
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\alkoholboy\obj\Debug\net6.0\alkoholboy.dll
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\alkoholboy\obj\Debug\net6.0\refint\alkoholboy.dll
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\alkoholboy\obj\Debug\net6.0\alkoholboy.pdb
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\alkoholboy\obj\Debug\net6.0\alkoholboy.genruntimeconfig.cache
+C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\alkoholboy\obj\Debug\net6.0\ref\alkoholboy.dll
