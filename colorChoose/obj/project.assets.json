@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Mastermind\\OneDrive - LG-Academy\\SEEntry\\colorChoose\\colorChoose.csproj",
+      "projectUniqueName": "D:\\GitHub\\umschulungSEIntro\\colorChoose\\colorChoose.csproj",
       "projectName": "colorChoose",
-      "projectPath": "C:\\Users\\Mastermind\\OneDrive - LG-Academy\\SEEntry\\colorChoose\\colorChoose.csproj",
+      "projectPath": "D:\\GitHub\\umschulungSEIntro\\colorChoose\\colorChoose.csproj",
       "packagesPath": "C:\\Users\\Mastermind\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Mastermind\\OneDrive - LG-Academy\\SEEntry\\colorChoose\\obj\\",
+      "outputPath": "D:\\GitHub\\umschulungSEIntro\\colorChoose\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,0 +1,15 @@
+D:\GitHub\umschulungSEIntro\carDealer\bin\Debug\net6.0\carDealer.exe
+D:\GitHub\umschulungSEIntro\carDealer\bin\Debug\net6.0\carDealer.deps.json
+D:\GitHub\umschulungSEIntro\carDealer\bin\Debug\net6.0\carDealer.runtimeconfig.json
+D:\GitHub\umschulungSEIntro\carDealer\bin\Debug\net6.0\carDealer.dll
+D:\GitHub\umschulungSEIntro\carDealer\bin\Debug\net6.0\carDealer.pdb
+D:\GitHub\umschulungSEIntro\carDealer\obj\Debug\net6.0\carDealer.csproj.AssemblyReference.cache
+D:\GitHub\umschulungSEIntro\carDealer\obj\Debug\net6.0\carDealer.GeneratedMSBuildEditorConfig.editorconfig
+D:\GitHub\umschulungSEIntro\carDealer\obj\Debug\net6.0\carDealer.AssemblyInfoInputs.cache
+D:\GitHub\umschulungSEIntro\carDealer\obj\Debug\net6.0\carDealer.AssemblyInfo.cs
+D:\GitHub\umschulungSEIntro\carDealer\obj\Debug\net6.0\carDealer.csproj.CoreCompileInputs.cache
+D:\GitHub\umschulungSEIntro\carDealer\obj\Debug\net6.0\carDealer.dll
+D:\GitHub\umschulungSEIntro\carDealer\obj\Debug\net6.0\refint\carDealer.dll
+D:\GitHub\umschulungSEIntro\carDealer\obj\Debug\net6.0\carDealer.pdb
+D:\GitHub\umschulungSEIntro\carDealer\obj\Debug\net6.0\carDealer.genruntimeconfig.cache
+D:\GitHub\umschulungSEIntro\carDealer\obj\Debug\net6.0\ref\carDealer.dll

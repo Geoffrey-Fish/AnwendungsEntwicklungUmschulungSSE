@@ -1,0 +1,15 @@
+D:\GitHub\umschulungSEIntro\KaffeeMaschine\bin\Debug\net6.0\KaffeeMaschine.exe
+D:\GitHub\umschulungSEIntro\KaffeeMaschine\bin\Debug\net6.0\KaffeeMaschine.deps.json
+D:\GitHub\umschulungSEIntro\KaffeeMaschine\bin\Debug\net6.0\KaffeeMaschine.runtimeconfig.json
+D:\GitHub\umschulungSEIntro\KaffeeMaschine\bin\Debug\net6.0\KaffeeMaschine.dll
+D:\GitHub\umschulungSEIntro\KaffeeMaschine\bin\Debug\net6.0\KaffeeMaschine.pdb
+D:\GitHub\umschulungSEIntro\KaffeeMaschine\obj\Debug\net6.0\KaffeeMaschine.csproj.AssemblyReference.cache
+D:\GitHub\umschulungSEIntro\KaffeeMaschine\obj\Debug\net6.0\KaffeeMaschine.GeneratedMSBuildEditorConfig.editorconfig
+D:\GitHub\umschulungSEIntro\KaffeeMaschine\obj\Debug\net6.0\KaffeeMaschine.AssemblyInfoInputs.cache
+D:\GitHub\umschulungSEIntro\KaffeeMaschine\obj\Debug\net6.0\KaffeeMaschine.AssemblyInfo.cs
+D:\GitHub\umschulungSEIntro\KaffeeMaschine\obj\Debug\net6.0\KaffeeMaschine.csproj.CoreCompileInputs.cache
+D:\GitHub\umschulungSEIntro\KaffeeMaschine\obj\Debug\net6.0\KaffeeMaschine.dll
+D:\GitHub\umschulungSEIntro\KaffeeMaschine\obj\Debug\net6.0\refint\KaffeeMaschine.dll
+D:\GitHub\umschulungSEIntro\KaffeeMaschine\obj\Debug\net6.0\KaffeeMaschine.pdb
+D:\GitHub\umschulungSEIntro\KaffeeMaschine\obj\Debug\net6.0\KaffeeMaschine.genruntimeconfig.cache
+D:\GitHub\umschulungSEIntro\KaffeeMaschine\obj\Debug\net6.0\ref\KaffeeMaschine.dll

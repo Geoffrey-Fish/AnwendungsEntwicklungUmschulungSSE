@@ -1,0 +1,15 @@
+D:\GitHub\umschulungSEIntro\CityLandRiver\CityLandRiver\bin\Debug\net6.0\CityLandRiver.exe
+D:\GitHub\umschulungSEIntro\CityLandRiver\CityLandRiver\bin\Debug\net6.0\CityLandRiver.deps.json
+D:\GitHub\umschulungSEIntro\CityLandRiver\CityLandRiver\bin\Debug\net6.0\CityLandRiver.runtimeconfig.json
+D:\GitHub\umschulungSEIntro\CityLandRiver\CityLandRiver\bin\Debug\net6.0\CityLandRiver.dll
+D:\GitHub\umschulungSEIntro\CityLandRiver\CityLandRiver\bin\Debug\net6.0\CityLandRiver.pdb
+D:\GitHub\umschulungSEIntro\CityLandRiver\CityLandRiver\obj\Debug\net6.0\CityLandRiver.csproj.AssemblyReference.cache
+D:\GitHub\umschulungSEIntro\CityLandRiver\CityLandRiver\obj\Debug\net6.0\CityLandRiver.GeneratedMSBuildEditorConfig.editorconfig
+D:\GitHub\umschulungSEIntro\CityLandRiver\CityLandRiver\obj\Debug\net6.0\CityLandRiver.AssemblyInfoInputs.cache
+D:\GitHub\umschulungSEIntro\CityLandRiver\CityLandRiver\obj\Debug\net6.0\CityLandRiver.AssemblyInfo.cs
+D:\GitHub\umschulungSEIntro\CityLandRiver\CityLandRiver\obj\Debug\net6.0\CityLandRiver.csproj.CoreCompileInputs.cache
+D:\GitHub\umschulungSEIntro\CityLandRiver\CityLandRiver\obj\Debug\net6.0\CityLandRiver.dll
+D:\GitHub\umschulungSEIntro\CityLandRiver\CityLandRiver\obj\Debug\net6.0\refint\CityLandRiver.dll
+D:\GitHub\umschulungSEIntro\CityLandRiver\CityLandRiver\obj\Debug\net6.0\CityLandRiver.pdb
+D:\GitHub\umschulungSEIntro\CityLandRiver\CityLandRiver\obj\Debug\net6.0\CityLandRiver.genruntimeconfig.cache
+D:\GitHub\umschulungSEIntro\CityLandRiver\CityLandRiver\obj\Debug\net6.0\ref\CityLandRiver.dll

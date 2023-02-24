@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Mastermind\\OneDrive - LG-Academy\\SEEntry\\passwordguesser\\passwordguesser.csproj",
+      "projectUniqueName": "D:\\GitHub\\umschulungSEIntro\\passwordguesser\\passwordguesser.csproj",
       "projectName": "passwordguesser",
-      "projectPath": "C:\\Users\\Mastermind\\OneDrive - LG-Academy\\SEEntry\\passwordguesser\\passwordguesser.csproj",
+      "projectPath": "D:\\GitHub\\umschulungSEIntro\\passwordguesser\\passwordguesser.csproj",
       "packagesPath": "C:\\Users\\Mastermind\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Mastermind\\OneDrive - LG-Academy\\SEEntry\\passwordguesser\\obj\\",
+      "outputPath": "D:\\GitHub\\umschulungSEIntro\\passwordguesser\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
