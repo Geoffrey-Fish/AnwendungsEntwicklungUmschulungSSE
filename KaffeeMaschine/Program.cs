@@ -26,11 +26,7 @@ namespace SSE
                     {
                     exit = true;
                     }
-                else
-                    {
-                    Clear();
-                    Nespresso.Menu();
-                    }
+                Clear();
                 }
             }
         }

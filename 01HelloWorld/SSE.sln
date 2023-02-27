@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01HelloWorld", "01HelloWorld.csproj", "{4774489F-0751-47F8-9CCA-43A271040A38}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloWorld", "HelloWorld.csproj", "{4774489F-0751-47F8-9CCA-43A271040A38}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "passwordguesser", "..\passwordguesser\passwordguesser.csproj", "{B8B2E2EA-D254-4463-9CAD-2FCCAC9F1324}"
 EndProject
@@ -25,13 +25,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lotto49Array", "..\Lotto49A
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BubbleSort", "..\BubbleSort\BubbleSort.csproj", "{4DCFE6E9-DE3B-4859-8834-7CE8F1AA10CB}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bubblemichi", "..\bubblemichi\bubblemichi.csproj", "{22B3102A-8CF0-40E0-96C4-35B0B1730F57}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vehicles", "..\carDealer\Vehicles.csproj", "{5EB6D9EF-DB31-4AB0-91CB-B440A15B416F}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CityLandRiver", "..\CityLandRiver\CityLandRiver\CityLandRiver.csproj", "{96491EF6-057A-4B3A-9D36-17EAB023382C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KaffeeMaschine", "..\KaffeeMaschine\KaffeeMaschine.csproj", "{34BF8374-7E8F-45B3-9BAB-6CE9B50F8FCF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KaffeeMaschine", "..\KaffeeMaschine\KaffeeMaschine.csproj", "{34BF8374-7E8F-45B3-9BAB-6CE9B50F8FCF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RPGOne", "..\SelfmadeRPG\RPGOne\RPGOne.csproj", "{61F2F6BC-CA8B-494B-B159-6A5255389429}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstractInterface", "..\AbstractInterface1\AbstractInterface.csproj", "{EE5C678A-A906-4E7B-8F9D-361646017B68}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -83,10 +85,6 @@ Global
 		{4DCFE6E9-DE3B-4859-8834-7CE8F1AA10CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4DCFE6E9-DE3B-4859-8834-7CE8F1AA10CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4DCFE6E9-DE3B-4859-8834-7CE8F1AA10CB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{22B3102A-8CF0-40E0-96C4-35B0B1730F57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{22B3102A-8CF0-40E0-96C4-35B0B1730F57}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{22B3102A-8CF0-40E0-96C4-35B0B1730F57}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{22B3102A-8CF0-40E0-96C4-35B0B1730F57}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5EB6D9EF-DB31-4AB0-91CB-B440A15B416F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5EB6D9EF-DB31-4AB0-91CB-B440A15B416F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5EB6D9EF-DB31-4AB0-91CB-B440A15B416F}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -99,6 +97,14 @@ Global
 		{34BF8374-7E8F-45B3-9BAB-6CE9B50F8FCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{34BF8374-7E8F-45B3-9BAB-6CE9B50F8FCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{34BF8374-7E8F-45B3-9BAB-6CE9B50F8FCF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61F2F6BC-CA8B-494B-B159-6A5255389429}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61F2F6BC-CA8B-494B-B159-6A5255389429}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61F2F6BC-CA8B-494B-B159-6A5255389429}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61F2F6BC-CA8B-494B-B159-6A5255389429}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE5C678A-A906-4E7B-8F9D-361646017B68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE5C678A-A906-4E7B-8F9D-361646017B68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE5C678A-A906-4E7B-8F9D-361646017B68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE5C678A-A906-4E7B-8F9D-361646017B68}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

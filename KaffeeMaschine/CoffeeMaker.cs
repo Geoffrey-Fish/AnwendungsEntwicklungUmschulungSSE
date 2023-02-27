@@ -89,6 +89,7 @@ namespace SSE
         ////////////////////////////BREW COFFEE////////////////////////////////////////////////////////////////////////////
         public void MakeCoffee()
             {
+            Clear();
             WriteLine("Checking levels...\n" +
                 "...\n" +
                 "...\n");
@@ -112,8 +113,10 @@ namespace SSE
                 }
             else
                 {
-                WriteLine("Please maintain your Machine accordingly before use...");
-                WriteLine("-----");
+                WriteLine("Please maintain your Machine accordingly before use...\n" +
+                    "...Starting Maintenance.\n " +
+                    "-------------------------");
+
                 Maintenance(0);
                 }
             }
@@ -135,10 +138,11 @@ namespace SSE
         /// <param name="x">if choice to give or not</param>
         public void Maintenance(int x)
             {
-
+            int temp;
             if(x == 0)
                 {
-                WriteLine("What needs to be filled or emptied?\n" +
+                WriteLine("Welcome to the Maintenance Menu.\n " +
+                    "What needs to be filled or emptied?\n" +
                     "1: Water\n" +
                     "2: Beans\n" +
                     "3: Wastebucket");
@@ -148,18 +152,21 @@ namespace SSE
             switch(x)
                 {
                 case 1:
+                    temp = waterTankMax - this.waterTankLevel;
                     this.waterTankLevel = waterTankMax;
-                    WriteLine("Water filled up.");
+                    WriteLine($"Water filled up with {temp} units.");
                     WriteLine("-----");
                     break;
                 case 2:
+                    temp = beanStorageMax - this.beanStorageLevel;
                     this.beanStorageLevel = beanStorageMax;
-                    WriteLine("Beans filled up");
+                    WriteLine($"Beans filled up with {temp} units.");
                     WriteLine("-----");
                     break;
                 case 3:
+                    temp = wasteBucketLevel;
                     this.wasteBucketLevel = 0;
-                    WriteLine("WasteBucket emptied.");
+                    WriteLine($"{temp} units removed from the WasteBucket.");
                     WriteLine("-----");
                     break;
                 default:

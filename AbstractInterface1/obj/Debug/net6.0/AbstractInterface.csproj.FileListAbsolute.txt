@@ -1,0 +1,15 @@
+D:\GitHub\umschulungSEIntro\AbstractInterface1\bin\Debug\net6.0\AbstractInterface.exe
+D:\GitHub\umschulungSEIntro\AbstractInterface1\bin\Debug\net6.0\AbstractInterface.deps.json
+D:\GitHub\umschulungSEIntro\AbstractInterface1\bin\Debug\net6.0\AbstractInterface.runtimeconfig.json
+D:\GitHub\umschulungSEIntro\AbstractInterface1\bin\Debug\net6.0\AbstractInterface.dll
+D:\GitHub\umschulungSEIntro\AbstractInterface1\bin\Debug\net6.0\AbstractInterface.pdb
+D:\GitHub\umschulungSEIntro\AbstractInterface1\obj\Debug\net6.0\AbstractInterface.csproj.AssemblyReference.cache
+D:\GitHub\umschulungSEIntro\AbstractInterface1\obj\Debug\net6.0\AbstractInterface.GeneratedMSBuildEditorConfig.editorconfig
+D:\GitHub\umschulungSEIntro\AbstractInterface1\obj\Debug\net6.0\AbstractInterface.AssemblyInfoInputs.cache
+D:\GitHub\umschulungSEIntro\AbstractInterface1\obj\Debug\net6.0\AbstractInterface.AssemblyInfo.cs
+D:\GitHub\umschulungSEIntro\AbstractInterface1\obj\Debug\net6.0\AbstractInterface.csproj.CoreCompileInputs.cache
+D:\GitHub\umschulungSEIntro\AbstractInterface1\obj\Debug\net6.0\AbstractInterface.dll
+D:\GitHub\umschulungSEIntro\AbstractInterface1\obj\Debug\net6.0\refint\AbstractInterface.dll
+D:\GitHub\umschulungSEIntro\AbstractInterface1\obj\Debug\net6.0\AbstractInterface.pdb
+D:\GitHub\umschulungSEIntro\AbstractInterface1\obj\Debug\net6.0\AbstractInterface.genruntimeconfig.cache
+D:\GitHub\umschulungSEIntro\AbstractInterface1\obj\Debug\net6.0\ref\AbstractInterface.dll
