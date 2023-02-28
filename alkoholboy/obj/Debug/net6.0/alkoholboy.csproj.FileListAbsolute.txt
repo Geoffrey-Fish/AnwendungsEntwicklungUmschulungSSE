@@ -13,3 +13,18 @@ C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\alkoholboy\obj\Debug\net6.0\re
 C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\alkoholboy\obj\Debug\net6.0\alkoholboy.pdb
 C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\alkoholboy\obj\Debug\net6.0\alkoholboy.genruntimeconfig.cache
 C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\alkoholboy\obj\Debug\net6.0\ref\alkoholboy.dll
+D:\GitHub\umschulungSEIntro\alkoholboy\bin\Debug\net6.0\alkoholboy.exe
+D:\GitHub\umschulungSEIntro\alkoholboy\bin\Debug\net6.0\alkoholboy.deps.json
+D:\GitHub\umschulungSEIntro\alkoholboy\bin\Debug\net6.0\alkoholboy.runtimeconfig.json
+D:\GitHub\umschulungSEIntro\alkoholboy\bin\Debug\net6.0\alkoholboy.dll
+D:\GitHub\umschulungSEIntro\alkoholboy\bin\Debug\net6.0\alkoholboy.pdb
+D:\GitHub\umschulungSEIntro\alkoholboy\obj\Debug\net6.0\alkoholboy.csproj.AssemblyReference.cache
+D:\GitHub\umschulungSEIntro\alkoholboy\obj\Debug\net6.0\alkoholboy.GeneratedMSBuildEditorConfig.editorconfig
+D:\GitHub\umschulungSEIntro\alkoholboy\obj\Debug\net6.0\alkoholboy.AssemblyInfoInputs.cache
+D:\GitHub\umschulungSEIntro\alkoholboy\obj\Debug\net6.0\alkoholboy.AssemblyInfo.cs
+D:\GitHub\umschulungSEIntro\alkoholboy\obj\Debug\net6.0\alkoholboy.csproj.CoreCompileInputs.cache
+D:\GitHub\umschulungSEIntro\alkoholboy\obj\Debug\net6.0\alkoholboy.dll
+D:\GitHub\umschulungSEIntro\alkoholboy\obj\Debug\net6.0\refint\alkoholboy.dll
+D:\GitHub\umschulungSEIntro\alkoholboy\obj\Debug\net6.0\alkoholboy.pdb
+D:\GitHub\umschulungSEIntro\alkoholboy\obj\Debug\net6.0\alkoholboy.genruntimeconfig.cache
+D:\GitHub\umschulungSEIntro\alkoholboy\obj\Debug\net6.0\ref\alkoholboy.dll

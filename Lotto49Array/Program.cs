@@ -1,212 +1,170 @@
 ﻿using static System.Console;
-
+/*
+ * We shall program an algorithm that draws
+ * 6 random numbers in the rage 1 to 49.
+ * No double draws allowed.
+ * */
+/*POSTSCRIPTUM:
+ * After that we could insert a simple game out of that base.
+ * I didn't do it back then, so I did it now.
+ */
 namespace SSE
     {
     public class Program
         {
         static void Main(string[] args)
             {
-            /* JOBDESCRIPTION
-            //Pick a number,print it out
-            WriteLine("Brudah gib Nummah!");
-            int dig;
-            //convert given number
-            dig = Convert.ToInt32(ReadLine());
-            //insert converted number
-            int[] lotto = new int[dig];
-            //fill each place with an increasing number
-            //Lottery in germany has 49 digits.
-            for(int i = 0;i < lotto.Length;i++)
-                {
-                lotto[i] = i + 1;
-                WriteLine(lotto[i]);
-                WriteLine("Whalla, habibi");
-                }
-            */
-            // Initialize Array as database
+            //If you wanna gamble
+            int[] playerBet = new int[6];
+            bool game = false;
 
+            WriteLine("Welcome to german lottery.\n" +
+                "These are the numbers to be drawn from:");
 
-            WriteLine("These are the numbers to be drawn from:");
-
+            //Initialize number Array for the lottery
             int[] lotto = new int[49];
             for(int o = 0;o < lotto.Length;o++)
                 {
                 lotto[o] = o + 1;
-                WriteLine($"==> {string.Join(", ",lotto)}");
+                }
+            //show the numbers
+
+            foreach(int val in lotto)
+                {
+                Write(val + ", ");
                 }
             WriteLine("\n -----------------------------------");
 
-            /*       //initialize collecting array
-                   int[] winners = new int[6];
-                   Random rand = new Random();
-                   //draw them lucky basterds
-                   for(int j = 0;j < 6;j++)
-                       {
-                       int draw = rand.Next(1,lotto.Length + 1);
-                       winners[j] = draw;
-                       //now take the chosen number out of the pool
-                       lotto = lotto.Where((source,index) => index != draw - 1).ToArray();
+            //Here I start the gamemode
+            WriteLine("Would you like to bet?\n" +
+                "(Y)es or (N)o");
+            Write("==> ");
+            string? answer = ReadLine().ToLower().Trim();
+            if(answer == "y")
+                {
+                game = true;
+                playerBet = Tipico();
+                }
+            else
+                {
+                WriteLine("Well, then we proceed with the drawing");
+                }
 
-                       // DEBUGGING
-                       //debugging, th show that there are only unique numbers
-                       WriteLine("\n ----------------------------------" +
-                           "\n Remaining numbers (Just for debugging purpose)");
-                       foreach(int k in lotto)
-                           {
-                           Write(k + " ");
-                           }
+            //initialize collecting array for the drawn numbers
+            int[] winners = new int[6];
 
-                       }
-                   WriteLine("\n -----------------------------------------------");
-                   WriteLine("The lucky numbers for today are: ");
-                   foreach(int val in winners)
-                       {
-                       Write(val + " ");
-                       }
-                   ReadKey();
-                   }
-       */
-            // Michis Lösung
-            /*
-
-                        int i = 0;
-                        int j = 0;
-                        int temp = 0;
-                        int x = 0;
-                        int[] michi = new int[10];
-                        Random rand = new Random();
-
-
-                        for(i = lotto.Length - 1;i > 0;i--)
-                            {
-
-                            j = rand.Next(i + 1);
-
-                            WriteLine("-------------------\n" +
-                                   "Aktueller Befehl:\n" +
-                                   "     j = rand.Next(i + 1);   \n " +
-                                   "---------------------\n " +
-                                $"For Schleife i steht bei: '{i}' \n" +
-                                $"Buffer Temp steht bei: '{temp}' \n" +
-                                $"Randomzahl j,gezogen aus '{i + 1}' ist : '{j}' \n" +
-                                $"Lottozahl an Position '{i}' lautet: '{lotto[i]}'");
-                            Write($"==> {string.Join(", ",lotto)}");
-
-                            temp = lotto[i];
-
-                            WriteLine("---------------------\n" +
-                                  "Aktueller Befehl:\n" +
-                                  "      temp = lotto[i];   \n " +
-                                  "-----------------------------\n " +
-                                $"For Schleife i steht bei: '{i}' \n" +
-                                $"Buffer Temp steht bei: '{temp}' \n" +
-                                $"Randomzahl j,gezogen aus '{i + 1}' ist : '{j}' \n" +
-                                $"Lottozahl an Position '{i}' lautet: '{lotto[i]}'");
-                            Write($"==> {string.Join(", ",lotto)}");
-                            lotto[i] = lotto[j];
-
-                            WriteLine("---------------------------\n" +
-                                "Aktueller Befehl:\n" +
-                                "     lotto[i] = lotto[j];   \n " +
-                                "---------------------------\n" +
-                                $"@@@@@@@@@@\n" +
-                                $"For Schleife i steht bei: '{i}' \n" +
-                                $"Buffer Temp steht bei: '{temp}' \n" +
-                                $"Randomzahl j,gezogen aus '{i + 1}' ist : '{j}' \n" +
-                                $"Lottozahl an Position '{i}' lautet: '{lotto[i]}'");
-                            Write($"==> {string.Join(", ",lotto)}");
-
-                            lotto[j] = temp;
-
-                            WriteLine("----------------------\n" +
-                                "Aktueller Befehl:\n" +
-                                "     lotto[j] = temp;   \n " +
-                                "----------------------------\n" +
-                                $"For Schleife i steht bei: '{i}' \n" +
-                                $"Buffer Temp steht bei: '{temp}' \n" +
-                                $"Randomzahl j,gezogen aus '{i + 1}' ist : '{j}' \n" +
-                                $"Lottozahl an Position '{i}' lautet: '{lotto[i]}'");
-                            Write($"==> {string.Join(", ",lotto)}");
-
-                            michi[x] = lotto[i];
-
-                            WriteLine($"---------------------------\n" +
-                                "Aktueller Befehl:\n" +
-                                "     michi[x] = lotto[i];   \n " +
-                                "}}}}}}}}}}}}}}}}" +
-
-                                $"For Schleife i steht bei: '{i}' \n" +
-                                $"Buffer Temp steht bei: '{temp}' \n" +
-                                $"Randomzahl j,gezogen aus '{i + 1}' ist : '{j}' \n" +
-                                $"Lottozahl an Position '{i}' lautet: '{lotto[i]}");
-                            Write($"==> {string.Join(", ",lotto)}");
-
-                            x++;
-
-                            WriteLine($"------------------\n" +
-                                $"For Schleife i steht bei: '{i}' \n" +
-                                $"Buffer Temp steht bei: '{temp}' \n" +
-                                $"Randomzahl j,gezogen aus '{i + 1}' ist : '{j}' \n" +
-                                $"Lottozahl an Position '{i}' lautet: '{lotto[i]}' \n" +
-                                $"Michi Array lautet: ");
-                            foreach(int z in michi)
-                                {
-                                Write(z + " ");
-                                }
-                            WriteLine("------------------------");
-                            Write($"==> {string.Join(", ",lotto)}");
-                            }
-            */
-
-            /*
-                        bool exit = false;
-                        while(exit == false)
-                            {
-                            int[] michi = new int[600];
-                            Random rand = new Random();
-                            int i;
-                            int j;
-                            int temp;
-                            int x = 0;
-                            for(i = lotto.Length - 1;i > 0;i--)
-                                {
-                                j = rand.Next(1,49);
-                                temp = lotto[i];
-                                lotto[i] = lotto[j];
-                                lotto[j] = temp;
-                                michi[x] = lotto[i];
-                                x++;
-                                WriteLine("------------------------");
-                                Write($"==> {string.Join(", ",lotto)}");
-                                }
-                            if(Array.IndexOf(michi,lotto[i]) != -1)
-                                {
-                                WriteLine("");
-                                Console.WriteLine($"{lotto[i]} is double!HA!");
-                                exit = true;
-                                ReadKey();
-                                }
-                            }
-            */
-            int i = 0;
-            int j = 0;
-            int temp = 0;
-            int x = 0;
-            int[] michi = new int[50];
+            //initialize the random generator
             Random rand = new Random();
 
-
-            for(i = lotto.Length - 1;i > 0;i--)
+            //draw them lucky basterds
+            for(int j = 0;j < 6;j++)
                 {
+                int draw = rand.Next(1,lotto.Length + 1);
 
-                j = rand.Next(i + 1);
-                temp = lotto[i];
-                lotto[i] = lotto[j];
-                lotto[j] = temp;
-                michi[x] = lotto[i];
-                x++;
-                WriteLine($"==> {string.Join(", ",lotto)}");
+                // Add drawn number
+                winners[j] = draw;
+
+                //now take the drawn number out of the pool to eliminate duplicates
+                lotto = lotto.Where((source,index) => index != draw - 1).ToArray();
+
+                /*
+                // DEBUGGING
+                // debugging, th show that there are only unique numbers
+                // WriteLine("\n ----------------------------------" +
+                // "\n Remaining numbers (Just for debugging purpose)");
+
+                 foreach(int k in lotto)
+                    {
+                    Write(k + " ");
+                    }
+                */
                 }
+            WriteLine("\n -----------------------------------------------");
+
+            //Showing the drawn numbers
+            WriteLine("The lucky numbers for today are: ");
+            Array.Sort(winners);
+            Write("==> ");
+            foreach(int val in winners)
+                {
+                Write(val + ", ");
+                }
+            WriteLine();
+
+            //Compare Tips if played
+            if(game)
+                {
+                WriteLine("Your numbers were:");
+                Array.Sort(playerBet);
+                Write("==> ");
+
+                //iterate through
+                foreach(int val in playerBet)
+                    {
+                    Write(val + ", ");
+                    }
+                WriteLine();
+
+                //Final output
+                WriteLine($"You have {ChickenDinner(playerBet,winners)} of six numbers correct!");
+                WriteLine("Adieu");
+                }
+            else
+                {
+                WriteLine("\n Ade.");
+                }
+
+            ReadKey();
+            }
+
+        public static int[] Tipico()
+            {
+            // Initialize variables
+            int[] tips = new int[6];
+            int i = 0;
+            //Message
+            WriteLine("Please enter six numbers from 1 to 49. \n " +
+                "Press enter after every number.");
+            //take input and check for validity
+            while(i < 6)
+                {
+                Write($"{i + 1}: ==> ");
+                int tip = Convert.ToInt32(ReadLine());
+                if(tip > 49 || tip < 1)
+                    {
+                    WriteLine("Wrong number!Try again!");
+                    }
+                else
+                    {
+                    tips[i] = tip;
+                    i++;
+                    }
+                }
+            return tips;
+            }
+        public static int ChickenDinner(int[] playerBet,int[] winners)
+            {
+            int matches = 0;
+            Array.Sort(playerBet);
+            //WriteLine(" debug pb");
+            //foreach(int z in playerBet)
+            //    {
+            //    Write(z + ", ");
+            //    }
+            Array.Sort(winners);
+            //WriteLine(" debug ww");
+            //foreach(int x in winners)
+            //    {
+            //    Write(x + ", ");
+            //    }
+            for(int i = 0;i < 6;i++)
+                {
+                if(playerBet[i] == winners[i])
+                    {
+                    matches++;
+                    }
+                }
+            return matches;
             }
         }
     }

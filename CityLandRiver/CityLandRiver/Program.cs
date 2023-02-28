@@ -1,5 +1,15 @@
 ﻿using static System.Console;
-
+/*
+ * This project was all by myself as we had the instruction to 
+ * play around with classes and methods.
+ * I know that Stadt Land Fluss is a well known challenge in coding.
+ * But I never had the idea before to actually do it!
+ * So be welcome. This might not be pretty, but it is mine ^^
+ * */
+/*POST SCRIPTUM
+* TODOS
+*I want a timer implemented!
+*/
 namespace CLR
     {
     class Program
@@ -177,3 +187,4 @@ namespace CLR
             }
         }
     }
+

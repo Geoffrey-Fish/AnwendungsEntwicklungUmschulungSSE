@@ -1,10 +1,10 @@
-﻿/*Erstelle Klasse Kaffeemaschine
- * Wasserstand und Bohnenmenge als Felder.
-   Zwei methoden ob Wasser oder Bohnen aufgefüllt werden müssen
-dazu zwei static methoden namens maxwasserstand und max bohnenmenge
-klasse muss datensicher gekapselt sein.
-zwei weitere methoden sollen zurück geben künnen, wie viel wasser und bohnen nachgefüllt werden könnte.
-Extra challenge für mich: mach noch einen müll container und einen milchschaum reiniger
+﻿/*Create class coffee machine
+ * Water level and bean quantity as fields.
+   Two methods if water or beans have to be filled up
+in addition two static methods named maxwaterlevel and maxbeanquantity
+class must be encapsulated data safe.
+two more methods should be able to return how much water and beans could be refilled.
+extra challenge for me: make another garbage container and a milk foam cleaner
 */
 using static System.Console;
 namespace SSE

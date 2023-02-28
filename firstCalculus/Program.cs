@@ -1,6 +1,10 @@
 ﻿using static System.Console;
 namespace SSE
     {
+    /*
+     * We should build a Calculator. In simple, with loops only would be okay.
+     * I overachieved here, again.
+    */
     public class Program
         {
         public static void Main(string[] args)

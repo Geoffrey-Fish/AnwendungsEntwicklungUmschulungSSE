@@ -13,3 +13,18 @@ C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\Lotto49Array\obj\Debug\net6.0\
 C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\Lotto49Array\obj\Debug\net6.0\Lotto49Array.pdb
 C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\Lotto49Array\obj\Debug\net6.0\Lotto49Array.genruntimeconfig.cache
 C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\Lotto49Array\obj\Debug\net6.0\ref\Lotto49Array.dll
+D:\GitHub\umschulungSEIntro\Lotto49Array\bin\Debug\net6.0\Lotto49Array.exe
+D:\GitHub\umschulungSEIntro\Lotto49Array\bin\Debug\net6.0\Lotto49Array.deps.json
+D:\GitHub\umschulungSEIntro\Lotto49Array\bin\Debug\net6.0\Lotto49Array.runtimeconfig.json
+D:\GitHub\umschulungSEIntro\Lotto49Array\bin\Debug\net6.0\Lotto49Array.dll
+D:\GitHub\umschulungSEIntro\Lotto49Array\bin\Debug\net6.0\Lotto49Array.pdb
+D:\GitHub\umschulungSEIntro\Lotto49Array\obj\Debug\net6.0\Lotto49Array.csproj.AssemblyReference.cache
+D:\GitHub\umschulungSEIntro\Lotto49Array\obj\Debug\net6.0\Lotto49Array.GeneratedMSBuildEditorConfig.editorconfig
+D:\GitHub\umschulungSEIntro\Lotto49Array\obj\Debug\net6.0\Lotto49Array.AssemblyInfoInputs.cache
+D:\GitHub\umschulungSEIntro\Lotto49Array\obj\Debug\net6.0\Lotto49Array.AssemblyInfo.cs
+D:\GitHub\umschulungSEIntro\Lotto49Array\obj\Debug\net6.0\Lotto49Array.csproj.CoreCompileInputs.cache
+D:\GitHub\umschulungSEIntro\Lotto49Array\obj\Debug\net6.0\Lotto49Array.dll
+D:\GitHub\umschulungSEIntro\Lotto49Array\obj\Debug\net6.0\refint\Lotto49Array.dll
+D:\GitHub\umschulungSEIntro\Lotto49Array\obj\Debug\net6.0\Lotto49Array.pdb
+D:\GitHub\umschulungSEIntro\Lotto49Array\obj\Debug\net6.0\Lotto49Array.genruntimeconfig.cache
+D:\GitHub\umschulungSEIntro\Lotto49Array\obj\Debug\net6.0\ref\Lotto49Array.dll

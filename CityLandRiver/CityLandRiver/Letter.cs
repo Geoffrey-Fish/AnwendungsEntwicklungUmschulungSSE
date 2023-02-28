@@ -1,7 +1,9 @@
 ﻿namespace CLR
     {
     /// <summary>
-    /// This Class is used to draw a random letter. To call with .drawer()
+    /// This Class is used to draw a random letter
+    /// from a to z.
+    /// To call with Letter.drawer()
     /// </summary>
     class Letter
         {

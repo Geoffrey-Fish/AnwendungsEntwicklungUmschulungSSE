@@ -13,3 +13,18 @@ C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\SPSSL\obj\Debug\net6.0\refint\
 C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\SPSSL\obj\Debug\net6.0\SPSSL.pdb
 C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\SPSSL\obj\Debug\net6.0\SPSSL.genruntimeconfig.cache
 C:\Users\Mastermind\OneDrive - LG-Academy\SEEntry\SPSSL\obj\Debug\net6.0\ref\SPSSL.dll
+D:\GitHub\umschulungSEIntro\SPSSL\bin\Debug\net6.0\SPSSL.exe
+D:\GitHub\umschulungSEIntro\SPSSL\bin\Debug\net6.0\SPSSL.deps.json
+D:\GitHub\umschulungSEIntro\SPSSL\bin\Debug\net6.0\SPSSL.runtimeconfig.json
+D:\GitHub\umschulungSEIntro\SPSSL\bin\Debug\net6.0\SPSSL.dll
+D:\GitHub\umschulungSEIntro\SPSSL\bin\Debug\net6.0\SPSSL.pdb
+D:\GitHub\umschulungSEIntro\SPSSL\obj\Debug\net6.0\SPSSL.csproj.AssemblyReference.cache
+D:\GitHub\umschulungSEIntro\SPSSL\obj\Debug\net6.0\SPSSL.GeneratedMSBuildEditorConfig.editorconfig
+D:\GitHub\umschulungSEIntro\SPSSL\obj\Debug\net6.0\SPSSL.AssemblyInfoInputs.cache
+D:\GitHub\umschulungSEIntro\SPSSL\obj\Debug\net6.0\SPSSL.AssemblyInfo.cs
+D:\GitHub\umschulungSEIntro\SPSSL\obj\Debug\net6.0\SPSSL.csproj.CoreCompileInputs.cache
+D:\GitHub\umschulungSEIntro\SPSSL\obj\Debug\net6.0\SPSSL.dll
+D:\GitHub\umschulungSEIntro\SPSSL\obj\Debug\net6.0\refint\SPSSL.dll
+D:\GitHub\umschulungSEIntro\SPSSL\obj\Debug\net6.0\SPSSL.pdb
+D:\GitHub\umschulungSEIntro\SPSSL\obj\Debug\net6.0\SPSSL.genruntimeconfig.cache
+D:\GitHub\umschulungSEIntro\SPSSL\obj\Debug\net6.0\ref\SPSSL.dll

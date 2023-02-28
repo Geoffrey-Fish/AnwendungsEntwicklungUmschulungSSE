@@ -1,0 +1,15 @@
+D:\GitHub\umschulungSEIntro\Polymorphism\bin\Debug\net6.0\Polymorphism.exe
+D:\GitHub\umschulungSEIntro\Polymorphism\bin\Debug\net6.0\Polymorphism.deps.json
+D:\GitHub\umschulungSEIntro\Polymorphism\bin\Debug\net6.0\Polymorphism.runtimeconfig.json
+D:\GitHub\umschulungSEIntro\Polymorphism\bin\Debug\net6.0\Polymorphism.dll
+D:\GitHub\umschulungSEIntro\Polymorphism\bin\Debug\net6.0\Polymorphism.pdb
+D:\GitHub\umschulungSEIntro\Polymorphism\obj\Debug\net6.0\Polymorphism.csproj.AssemblyReference.cache
+D:\GitHub\umschulungSEIntro\Polymorphism\obj\Debug\net6.0\Polymorphism.GeneratedMSBuildEditorConfig.editorconfig
+D:\GitHub\umschulungSEIntro\Polymorphism\obj\Debug\net6.0\Polymorphism.AssemblyInfoInputs.cache
+D:\GitHub\umschulungSEIntro\Polymorphism\obj\Debug\net6.0\Polymorphism.AssemblyInfo.cs
+D:\GitHub\umschulungSEIntro\Polymorphism\obj\Debug\net6.0\Polymorphism.csproj.CoreCompileInputs.cache
+D:\GitHub\umschulungSEIntro\Polymorphism\obj\Debug\net6.0\Polymorphism.dll
+D:\GitHub\umschulungSEIntro\Polymorphism\obj\Debug\net6.0\refint\Polymorphism.dll
+D:\GitHub\umschulungSEIntro\Polymorphism\obj\Debug\net6.0\Polymorphism.pdb
+D:\GitHub\umschulungSEIntro\Polymorphism\obj\Debug\net6.0\Polymorphism.genruntimeconfig.cache
+D:\GitHub\umschulungSEIntro\Polymorphism\obj\Debug\net6.0\ref\Polymorphism.dll

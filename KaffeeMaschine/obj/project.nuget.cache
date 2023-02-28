@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NLdByg/znvjlPLQmm52sps/+8raAK4iUv4fYuZSd2rZIxADAyY4twhboNh9iQPY60dSxBi/CJUe7AapFijRUHA==",
+  "dgSpecHash": "e8Uk4Jhmt5OWTGxMCu0b+aPehbLAYfDi2BC4iMEwabR6mv8f/7NAcVIrUhReDCYKaJVYiv342AStCPntmGAehg==",
   "success": true,
-  "projectFilePath": "D:\\GitHub\\umschulungSEIntro\\KaffeeMaschine\\KaffeeMaschine.csproj",
+  "projectFilePath": "D:\\GitHub\\umschulungSEIntro\\KaffeeMaschine\\CoffeeMaker.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

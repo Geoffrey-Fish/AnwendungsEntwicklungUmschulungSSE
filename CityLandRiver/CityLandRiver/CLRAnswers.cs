@@ -1,7 +1,7 @@
 ﻿namespace CLR
     {
     /// <summary>
-    /// This is basically just a complicated storage so far- meh, whatever
+    /// Class designed storage,because why not?
     /// </summary>
     class CLRAnswers
         {

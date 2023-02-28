@@ -1,15 +1,20 @@
 ﻿using static System.Console;
+
+/* Simple showcase that a terminal has colors...*/
 namespace SSE
     {
     public static class Program
         {
         public static void Main(string[] args)
             {
+            // I set a counter, it was so boring
             int tries = 3;
             while(tries != 0)
                 {
+                //Take input
                 WriteLine("Welcome, please change my Color: (R)ed, (G)reen, (B)lue.");
                 string? color = ReadLine().ToLower();
+                //At this point I wasn't supposed to already know about and use switch- lol
                 switch(color)
                     {
                     case "r" or "red":
@@ -36,6 +41,7 @@ namespace SSE
                     " Really well done, Buddy! \n" +
                     " Press any key to stop this!");
                 ReadKey();
+                //I really like that nifty little kicker!
                 Environment.Exit(0);
                 }
             /*After 3 times you get kicked out!*/

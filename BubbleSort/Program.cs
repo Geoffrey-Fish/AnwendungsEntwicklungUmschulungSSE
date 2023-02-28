@@ -27,7 +27,6 @@ namespace SSE
                 WriteLine($"Round: {a}");
                 WriteLine($"{string.Join(", ",array)}");
 
-                //Where the magic happens
                 //Iterate through the array
                 for(int b = 0;b < array.Length - 1;b++)
                     {
@@ -62,31 +61,37 @@ namespace SSE
             WriteLine("Hi, i am a Bubblesort V2 example.");
             WriteLine("This is the culprit:");
             WriteLine($"{string.Join(", ",brray)}");
-
+            // While loop that will break if nothing was changed anymore!
             while(exit == false)
                 {
+                //
                 int place1 = 0;
                 int place2 = 1;
                 //This one is new and important.
                 //It checks if an iteration went through
                 //all positions without the need to change them.
                 int changed = 0;
-
+                //Another boost, ignore all numbers right from that imagined line
                 for(int a = brray.Length;a >= 0;a--)
                     {
+                    //Why that a< brray.Length?
+                    //You need to iterate at least once
+                    //before you can assure the array is
+                    //sorted
                     if(a < brray.Length && changed == 0)
                         {
                         exit = true;
                         break;
                         }
+                    //Debugging Visualizer
                     WriteLine($"changed is at: {changed}");
                     place1 = 0;
                     place2 = 1;
                     changed = 0;
-
+                    //Debugging visualizer
                     WriteLine($"Round:{a}");
                     WriteLine($"{string.Join(", ",brray)}");
-
+                    //Same iteration as in V1, but...
                     for(int b = 0;b < brray.Length - 1;b++)
                         {
                         WriteLine($"changed: {changed}");
@@ -96,16 +101,19 @@ namespace SSE
                             (brray[place1], brray[place2]) = (brray[place2], brray[place1]);
                             place1++;
                             place2++;
+                            //...Here you see the change counter...
                             changed++;
                             }
                         else
                             {
+                            //...which won't be touched if nothing changed!
                             place1++;
                             place2++;
                             }
                         }
                     }
                 }
+            //That's it!
             WriteLine("Done! The array now looks like this:");
             WriteLine($"{string.Join(", ",brray)}");
             }
