@@ -1,0 +1,15 @@
+D:\GitHub\umschulungSEIntro\Workplaces\bin\Debug\net6.0\Workplaces.exe
+D:\GitHub\umschulungSEIntro\Workplaces\bin\Debug\net6.0\Workplaces.deps.json
+D:\GitHub\umschulungSEIntro\Workplaces\bin\Debug\net6.0\Workplaces.runtimeconfig.json
+D:\GitHub\umschulungSEIntro\Workplaces\bin\Debug\net6.0\Workplaces.dll
+D:\GitHub\umschulungSEIntro\Workplaces\bin\Debug\net6.0\Workplaces.pdb
+D:\GitHub\umschulungSEIntro\Workplaces\obj\Debug\net6.0\Workplaces.csproj.AssemblyReference.cache
+D:\GitHub\umschulungSEIntro\Workplaces\obj\Debug\net6.0\Workplaces.GeneratedMSBuildEditorConfig.editorconfig
+D:\GitHub\umschulungSEIntro\Workplaces\obj\Debug\net6.0\Workplaces.AssemblyInfoInputs.cache
+D:\GitHub\umschulungSEIntro\Workplaces\obj\Debug\net6.0\Workplaces.AssemblyInfo.cs
+D:\GitHub\umschulungSEIntro\Workplaces\obj\Debug\net6.0\Workplaces.csproj.CoreCompileInputs.cache
+D:\GitHub\umschulungSEIntro\Workplaces\obj\Debug\net6.0\Workplaces.dll
+D:\GitHub\umschulungSEIntro\Workplaces\obj\Debug\net6.0\refint\Workplaces.dll
+D:\GitHub\umschulungSEIntro\Workplaces\obj\Debug\net6.0\Workplaces.pdb
+D:\GitHub\umschulungSEIntro\Workplaces\obj\Debug\net6.0\Workplaces.genruntimeconfig.cache
+D:\GitHub\umschulungSEIntro\Workplaces\obj\Debug\net6.0\ref\Workplaces.dll
