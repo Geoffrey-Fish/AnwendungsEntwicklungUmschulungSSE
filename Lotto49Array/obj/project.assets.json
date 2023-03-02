@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GitHub\\umschulungSEIntro\\Lotto49Array\\Lotto49Array.csproj",
-      "projectName": "Lotto49Array",
-      "projectPath": "D:\\GitHub\\umschulungSEIntro\\Lotto49Array\\Lotto49Array.csproj",
+      "projectUniqueName": "D:\\GitHub\\umschulungSEIntro\\Lotto49Array\\10Lotto49Array.csproj",
+      "projectName": "10Lotto49Array",
+      "projectPath": "D:\\GitHub\\umschulungSEIntro\\Lotto49Array\\10Lotto49Array.csproj",
       "packagesPath": "C:\\Users\\Mastermind\\.nuget\\packages\\",
       "outputPath": "D:\\GitHub\\umschulungSEIntro\\Lotto49Array\\obj\\",
       "projectStyle": "PackageReference",

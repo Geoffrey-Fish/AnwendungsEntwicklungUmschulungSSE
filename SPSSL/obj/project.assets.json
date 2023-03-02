@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GitHub\\umschulungSEIntro\\SPSSL\\SPSSL.csproj",
-      "projectName": "SPSSL",
-      "projectPath": "D:\\GitHub\\umschulungSEIntro\\SPSSL\\SPSSL.csproj",
+      "projectUniqueName": "D:\\GitHub\\umschulungSEIntro\\SPSSL\\09StonePaperScissorsSpockLizard.csproj",
+      "projectName": "09StonePaperScissorsSpockLizard",
+      "projectPath": "D:\\GitHub\\umschulungSEIntro\\SPSSL\\09StonePaperScissorsSpockLizard.csproj",
       "packagesPath": "C:\\Users\\Mastermind\\.nuget\\packages\\",
       "outputPath": "D:\\GitHub\\umschulungSEIntro\\SPSSL\\obj\\",
       "projectStyle": "PackageReference",

@@ -1,7 +1,7 @@
 ﻿using static System.Console;
 namespace ShoppingMall
     {
-    class Employees
+    class Employees: Person
         {
         public string gender;
         public string firstName;
@@ -22,6 +22,7 @@ namespace ShoppingMall
             this.pID = pID;
             this.rabbate = rabbate;
             }
+
         public void Adress()
             {
             WriteLine($"Street: {this.street}.\n" +

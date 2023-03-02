@@ -31,7 +31,7 @@ namespace SSE
 
             foreach(int val in lotto)
                 {
-                Write(val + ", ");
+                Write(val + ",");
                 }
             WriteLine("\n -----------------------------------");
 

@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GitHub\\umschulungSEIntro\\PasswordTester\\PasswordTester.csproj",
-      "projectName": "PasswordTester",
-      "projectPath": "D:\\GitHub\\umschulungSEIntro\\PasswordTester\\PasswordTester.csproj",
+      "projectUniqueName": "D:\\GitHub\\umschulungSEIntro\\PasswordTester\\03PasswordTester.csproj",
+      "projectName": "03PasswordTester",
+      "projectPath": "D:\\GitHub\\umschulungSEIntro\\PasswordTester\\03PasswordTester.csproj",
       "packagesPath": "C:\\Users\\Mastermind\\.nuget\\packages\\",
       "outputPath": "D:\\GitHub\\umschulungSEIntro\\PasswordTester\\obj\\",
       "projectStyle": "PackageReference",

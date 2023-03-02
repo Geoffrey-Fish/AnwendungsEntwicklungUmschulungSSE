@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GitHub\\umschulungSEIntro\\firstCalculus\\firstCalculus.csproj",
-      "projectName": "firstCalculus",
-      "projectPath": "D:\\GitHub\\umschulungSEIntro\\firstCalculus\\firstCalculus.csproj",
+      "projectUniqueName": "D:\\GitHub\\umschulungSEIntro\\firstCalculus\\06firstCalculus.csproj",
+      "projectName": "06firstCalculus",
+      "projectPath": "D:\\GitHub\\umschulungSEIntro\\firstCalculus\\06firstCalculus.csproj",
       "packagesPath": "C:\\Users\\Mastermind\\.nuget\\packages\\",
       "outputPath": "D:\\GitHub\\umschulungSEIntro\\firstCalculus\\obj\\",
       "projectStyle": "PackageReference",

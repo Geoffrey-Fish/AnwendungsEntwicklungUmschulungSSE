@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GitHub\\umschulungSEIntro\\passwordguesser\\passwordguesser.csproj",
-      "projectName": "passwordguesser",
-      "projectPath": "D:\\GitHub\\umschulungSEIntro\\passwordguesser\\passwordguesser.csproj",
+      "projectUniqueName": "D:\\GitHub\\umschulungSEIntro\\passwordguesser\\07passwordguesser.csproj",
+      "projectName": "07passwordguesser",
+      "projectPath": "D:\\GitHub\\umschulungSEIntro\\passwordguesser\\07passwordguesser.csproj",
       "packagesPath": "C:\\Users\\Mastermind\\.nuget\\packages\\",
       "outputPath": "D:\\GitHub\\umschulungSEIntro\\passwordguesser\\obj\\",
       "projectStyle": "PackageReference",

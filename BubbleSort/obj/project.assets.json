@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GitHub\\umschulungSEIntro\\BubbleSort\\BubbleSort.csproj",
-      "projectName": "BubbleSort",
-      "projectPath": "D:\\GitHub\\umschulungSEIntro\\BubbleSort\\BubbleSort.csproj",
+      "projectUniqueName": "D:\\GitHub\\umschulungSEIntro\\BubbleSort\\11BubbleSort.csproj",
+      "projectName": "11BubbleSort",
+      "projectPath": "D:\\GitHub\\umschulungSEIntro\\BubbleSort\\11BubbleSort.csproj",
       "packagesPath": "C:\\Users\\Mastermind\\.nuget\\packages\\",
       "outputPath": "D:\\GitHub\\umschulungSEIntro\\BubbleSort\\obj\\",
       "projectStyle": "PackageReference",

@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GitHub\\umschulungSEIntro\\plz\\plz.csproj",
-      "projectName": "plz",
-      "projectPath": "D:\\GitHub\\umschulungSEIntro\\plz\\plz.csproj",
+      "projectUniqueName": "D:\\GitHub\\umschulungSEIntro\\plz\\08PostLeitZahl.csproj",
+      "projectName": "08PostLeitZahl",
+      "projectPath": "D:\\GitHub\\umschulungSEIntro\\plz\\08PostLeitZahl.csproj",
       "packagesPath": "C:\\Users\\Mastermind\\.nuget\\packages\\",
       "outputPath": "D:\\GitHub\\umschulungSEIntro\\plz\\obj\\",
       "projectStyle": "PackageReference",

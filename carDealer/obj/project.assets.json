@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GitHub\\umschulungSEIntro\\carDealer\\Vehicles.csproj",
-      "projectName": "Vehicles",
-      "projectPath": "D:\\GitHub\\umschulungSEIntro\\carDealer\\Vehicles.csproj",
+      "projectUniqueName": "D:\\GitHub\\umschulungSEIntro\\carDealer\\12Vehicles.csproj",
+      "projectName": "12Vehicles",
+      "projectPath": "D:\\GitHub\\umschulungSEIntro\\carDealer\\12Vehicles.csproj",
       "packagesPath": "C:\\Users\\Mastermind\\.nuget\\packages\\",
       "outputPath": "D:\\GitHub\\umschulungSEIntro\\carDealer\\obj\\",
       "projectStyle": "PackageReference",

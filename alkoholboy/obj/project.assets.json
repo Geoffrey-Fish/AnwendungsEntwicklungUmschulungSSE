@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GitHub\\umschulungSEIntro\\alkoholboy\\alkoholboy.csproj",
-      "projectName": "alkoholboy",
-      "projectPath": "D:\\GitHub\\umschulungSEIntro\\alkoholboy\\alkoholboy.csproj",
+      "projectUniqueName": "D:\\GitHub\\umschulungSEIntro\\alkoholboy\\04alkoholboy.csproj",
+      "projectName": "04alkoholboy",
+      "projectPath": "D:\\GitHub\\umschulungSEIntro\\alkoholboy\\04alkoholboy.csproj",
       "packagesPath": "C:\\Users\\Mastermind\\.nuget\\packages\\",
       "outputPath": "D:\\GitHub\\umschulungSEIntro\\alkoholboy\\obj\\",
       "projectStyle": "PackageReference",

@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GitHub\\umschulungSEIntro\\KaffeeMaschine\\CoffeeMaker.csproj",
-      "projectName": "CoffeeMaker",
-      "projectPath": "D:\\GitHub\\umschulungSEIntro\\KaffeeMaschine\\CoffeeMaker.csproj",
+      "projectUniqueName": "D:\\GitHub\\umschulungSEIntro\\KaffeeMaschine\\14CoffeeMaker.csproj",
+      "projectName": "14CoffeeMaker",
+      "projectPath": "D:\\GitHub\\umschulungSEIntro\\KaffeeMaschine\\14CoffeeMaker.csproj",
       "packagesPath": "C:\\Users\\Mastermind\\.nuget\\packages\\",
       "outputPath": "D:\\GitHub\\umschulungSEIntro\\KaffeeMaschine\\obj\\",
       "projectStyle": "PackageReference",

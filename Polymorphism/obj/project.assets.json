@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GitHub\\umschulungSEIntro\\Polymorphism\\Polymorphism.csproj",
-      "projectName": "Polymorphism",
-      "projectPath": "D:\\GitHub\\umschulungSEIntro\\Polymorphism\\Polymorphism.csproj",
+      "projectUniqueName": "D:\\GitHub\\umschulungSEIntro\\Polymorphism\\16Polymorphism.csproj",
+      "projectName": "16Polymorphism",
+      "projectPath": "D:\\GitHub\\umschulungSEIntro\\Polymorphism\\16Polymorphism.csproj",
       "packagesPath": "C:\\Users\\Mastermind\\.nuget\\packages\\",
       "outputPath": "D:\\GitHub\\umschulungSEIntro\\Polymorphism\\obj\\",
       "projectStyle": "PackageReference",

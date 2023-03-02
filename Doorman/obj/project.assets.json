@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GitHub\\umschulungSEIntro\\Doorman\\Doorman.csproj",
-      "projectName": "Doorman",
-      "projectPath": "D:\\GitHub\\umschulungSEIntro\\Doorman\\Doorman.csproj",
+      "projectUniqueName": "D:\\GitHub\\umschulungSEIntro\\Doorman\\02Doorman.csproj",
+      "projectName": "02Doorman",
+      "projectPath": "D:\\GitHub\\umschulungSEIntro\\Doorman\\02Doorman.csproj",
       "packagesPath": "C:\\Users\\Mastermind\\.nuget\\packages\\",
       "outputPath": "D:\\GitHub\\umschulungSEIntro\\Doorman\\obj\\",
       "projectStyle": "PackageReference",

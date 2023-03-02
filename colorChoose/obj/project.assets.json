@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GitHub\\umschulungSEIntro\\colorChoose\\colorChoose.csproj",
-      "projectName": "colorChoose",
-      "projectPath": "D:\\GitHub\\umschulungSEIntro\\colorChoose\\colorChoose.csproj",
+      "projectUniqueName": "D:\\GitHub\\umschulungSEIntro\\colorChoose\\05colorChoose.csproj",
+      "projectName": "05colorChoose",
+      "projectPath": "D:\\GitHub\\umschulungSEIntro\\colorChoose\\05colorChoose.csproj",
       "packagesPath": "C:\\Users\\Mastermind\\.nuget\\packages\\",
       "outputPath": "D:\\GitHub\\umschulungSEIntro\\colorChoose\\obj\\",
       "projectStyle": "PackageReference",

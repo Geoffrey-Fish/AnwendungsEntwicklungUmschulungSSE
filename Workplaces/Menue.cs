@@ -6,32 +6,41 @@ namespace ShoppingMall
         {
         public static void Startup()
             {
-            bool working = true;
+            bool programWorks = true;
             do
                 {
                 WriteLine("Welcome, user.\n" +
                     "Please choose your program: \n" +
-                    "1: Bill \n" +
-                    "2: Stop program");
+                    "1: Shopping \n" +
+                    "2: Coffee shop \n" +
+                    "3: Play Lotto \n" +
+                    "4: Stop that program");
                 /*Does break the program*/
                 //int process = Convert.ToInt32(ReadLine());
                 /* Holds the program stable*/
                 Int32.TryParse(ReadLine(),out int process);
-                if(process == 1)
+                switch(process)
                     {
-
-                    }
-                else if(process == 2)
-                    {
-                    working = false;
-                    }
-                else
-                    {
-                    WriteLine("Wrong input, restart Program.\n" +
+                    case 1:
+                        Calculations.Calculation();
+                        break;
+                    case 2:
+                        CoffeeMaker espresso = new CoffeeMaker();
+                        espresso.Menu();
+                        break;
+                    case 3:
+                        Lotto.LottoGame();
+                        break;
+                    case 4:
+                        programWorks = false;
+                        break;
+                    default:
+                        WriteLine("Wrong input, restart Program.\n" +
                         ";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;");
+                        break;
                     }
                 }
-            while(working == true);
+            while(programWorks == true);
             }
         }
     }

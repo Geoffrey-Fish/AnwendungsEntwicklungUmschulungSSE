@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GitHub\\umschulungSEIntro\\Workplaces\\ShoppingMall.csproj",
-      "projectName": "ShoppingMall",
-      "projectPath": "D:\\GitHub\\umschulungSEIntro\\Workplaces\\ShoppingMall.csproj",
+      "projectUniqueName": "D:\\GitHub\\umschulungSEIntro\\Workplaces\\17ShoppingMall.csproj",
+      "projectName": "17ShoppingMall",
+      "projectPath": "D:\\GitHub\\umschulungSEIntro\\Workplaces\\17ShoppingMall.csproj",
       "packagesPath": "C:\\Users\\Mastermind\\.nuget\\packages\\",
       "outputPath": "D:\\GitHub\\umschulungSEIntro\\Workplaces\\obj\\",
       "projectStyle": "PackageReference",

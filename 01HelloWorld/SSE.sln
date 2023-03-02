@@ -3,41 +3,41 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloWorld", "HelloWorld.csproj", "{4774489F-0751-47F8-9CCA-43A271040A38}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01HelloWorld", "01HelloWorld.csproj", "{4774489F-0751-47F8-9CCA-43A271040A38}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "passwordguesser", "..\passwordguesser\passwordguesser.csproj", "{B8B2E2EA-D254-4463-9CAD-2FCCAC9F1324}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "07passwordguesser", "..\passwordguesser\07passwordguesser.csproj", "{B8B2E2EA-D254-4463-9CAD-2FCCAC9F1324}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Doorman", "..\Doorman\Doorman.csproj", "{32E9EE51-9808-43A7-8E8A-36E4CCA290C8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02Doorman", "..\Doorman\02Doorman.csproj", "{32E9EE51-9808-43A7-8E8A-36E4CCA290C8}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "colorChoose", "..\colorChoose\colorChoose.csproj", "{0B0735F6-16B6-45A9-B79B-D48AC6EEE265}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05ColorChoose", "..\colorChoose\05ColorChoose.csproj", "{0B0735F6-16B6-45A9-B79B-D48AC6EEE265}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "alkoholboy", "..\alkoholboy\alkoholboy.csproj", "{5D9D6910-20F2-4176-9C85-2B2106B1FAA2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04AlkoholBoy", "..\alkoholboy\04AlkoholBoy.csproj", "{5D9D6910-20F2-4176-9C85-2B2106B1FAA2}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "plz", "..\plz\plz.csproj", "{39522B71-0495-4E96-9E45-A0F0651FE1EF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "08PostLeitZahl", "..\plz\08PostLeitZahl.csproj", "{39522B71-0495-4E96-9E45-A0F0651FE1EF}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PasswordTester", "..\PasswordTester\PasswordTester.csproj", "{EA2D8870-5C38-41C1-8286-A75D94A64999}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03PasswordTester", "..\PasswordTester\03PasswordTester.csproj", "{EA2D8870-5C38-41C1-8286-A75D94A64999}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "firstCalculus", "..\firstCalculus\firstCalculus.csproj", "{75A62A88-8E7F-425F-9ED1-7D00F1680DE8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "06firstCalculus", "..\firstCalculus\06firstCalculus.csproj", "{75A62A88-8E7F-425F-9ED1-7D00F1680DE8}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SPSSL", "..\SPSSL\SPSSL.csproj", "{CE601500-0786-4D40-8680-9228AC016837}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "09StonePaperScissorsSpockLizard", "..\SPSSL\09StonePaperScissorsSpockLizard.csproj", "{CE601500-0786-4D40-8680-9228AC016837}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lotto49Array", "..\Lotto49Array\Lotto49Array.csproj", "{31FF8085-87AD-4673-B705-AB05CD188D3D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "10Lotto49Array", "..\Lotto49Array\10Lotto49Array.csproj", "{31FF8085-87AD-4673-B705-AB05CD188D3D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BubbleSort", "..\BubbleSort\BubbleSort.csproj", "{4DCFE6E9-DE3B-4859-8834-7CE8F1AA10CB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "11BubbleSort", "..\BubbleSort\11BubbleSort.csproj", "{4DCFE6E9-DE3B-4859-8834-7CE8F1AA10CB}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vehicles", "..\carDealer\Vehicles.csproj", "{5EB6D9EF-DB31-4AB0-91CB-B440A15B416F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "12Vehicles", "..\carDealer\12Vehicles.csproj", "{5EB6D9EF-DB31-4AB0-91CB-B440A15B416F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CityLandRiver", "..\CityLandRiver\CityLandRiver\CityLandRiver.csproj", "{96491EF6-057A-4B3A-9D36-17EAB023382C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "13CityLandRiver", "..\CityLandRiver\CityLandRiver\13CityLandRiver.csproj", "{96491EF6-057A-4B3A-9D36-17EAB023382C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoffeeMaker", "..\KaffeeMaschine\CoffeeMaker.csproj", "{34BF8374-7E8F-45B3-9BAB-6CE9B50F8FCF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "14CoffeeMaker", "..\KaffeeMaschine\14CoffeeMaker.csproj", "{34BF8374-7E8F-45B3-9BAB-6CE9B50F8FCF}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RPGOne", "..\SelfmadeRPG\RPGOne\RPGOne.csproj", "{61F2F6BC-CA8B-494B-B159-6A5255389429}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AbstractInterface", "..\AbstractInterface1\AbstractInterface.csproj", "{EE5C678A-A906-4E7B-8F9D-361646017B68}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "15AbstractInterface", "..\AbstractInterface1\15AbstractInterface.csproj", "{EE5C678A-A906-4E7B-8F9D-361646017B68}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Polymorphism", "..\Polymorphism\Polymorphism.csproj", "{770EFDFB-7BD2-4CE1-BA1A-EDCA34E862FB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "16Polymorphism", "..\Polymorphism\16Polymorphism.csproj", "{770EFDFB-7BD2-4CE1-BA1A-EDCA34E862FB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShoppingMall", "..\Workplaces\ShoppingMall.csproj", "{6E261AAB-2EC5-4C6D-9D83-E2152C18AC0F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "17ShoppingMall", "..\Workplaces\17ShoppingMall.csproj", "{6E261AAB-2EC5-4C6D-9D83-E2152C18AC0F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

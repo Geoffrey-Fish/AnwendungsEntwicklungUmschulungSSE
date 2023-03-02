@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GitHub\\umschulungSEIntro\\01HelloWorld\\HelloWorld.csproj",
-      "projectName": "HelloWorld",
-      "projectPath": "D:\\GitHub\\umschulungSEIntro\\01HelloWorld\\HelloWorld.csproj",
+      "projectUniqueName": "D:\\GitHub\\umschulungSEIntro\\01HelloWorld\\01HelloWorld.csproj",
+      "projectName": "01HelloWorld",
+      "projectPath": "D:\\GitHub\\umschulungSEIntro\\01HelloWorld\\01HelloWorld.csproj",
       "packagesPath": "C:\\Users\\Mastermind\\.nuget\\packages\\",
       "outputPath": "D:\\GitHub\\umschulungSEIntro\\01HelloWorld\\obj\\",
       "projectStyle": "PackageReference",

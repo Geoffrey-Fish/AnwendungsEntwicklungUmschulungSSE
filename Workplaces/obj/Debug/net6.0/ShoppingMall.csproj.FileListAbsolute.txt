@@ -1,0 +1,15 @@
+D:\GitHub\umschulungSEIntro\Workplaces\bin\Debug\net6.0\ShoppingMall.exe
+D:\GitHub\umschulungSEIntro\Workplaces\bin\Debug\net6.0\ShoppingMall.deps.json
+D:\GitHub\umschulungSEIntro\Workplaces\bin\Debug\net6.0\ShoppingMall.runtimeconfig.json
+D:\GitHub\umschulungSEIntro\Workplaces\bin\Debug\net6.0\ShoppingMall.dll
+D:\GitHub\umschulungSEIntro\Workplaces\bin\Debug\net6.0\ShoppingMall.pdb
+D:\GitHub\umschulungSEIntro\Workplaces\obj\Debug\net6.0\ShoppingMall.csproj.AssemblyReference.cache
+D:\GitHub\umschulungSEIntro\Workplaces\obj\Debug\net6.0\ShoppingMall.GeneratedMSBuildEditorConfig.editorconfig
+D:\GitHub\umschulungSEIntro\Workplaces\obj\Debug\net6.0\ShoppingMall.AssemblyInfoInputs.cache
+D:\GitHub\umschulungSEIntro\Workplaces\obj\Debug\net6.0\ShoppingMall.AssemblyInfo.cs
+D:\GitHub\umschulungSEIntro\Workplaces\obj\Debug\net6.0\ShoppingMall.csproj.CoreCompileInputs.cache
+D:\GitHub\umschulungSEIntro\Workplaces\obj\Debug\net6.0\ShoppingMall.dll
+D:\GitHub\umschulungSEIntro\Workplaces\obj\Debug\net6.0\refint\ShoppingMall.dll
+D:\GitHub\umschulungSEIntro\Workplaces\obj\Debug\net6.0\ShoppingMall.pdb
+D:\GitHub\umschulungSEIntro\Workplaces\obj\Debug\net6.0\ShoppingMall.genruntimeconfig.cache
+D:\GitHub\umschulungSEIntro\Workplaces\obj\Debug\net6.0\ref\ShoppingMall.dll

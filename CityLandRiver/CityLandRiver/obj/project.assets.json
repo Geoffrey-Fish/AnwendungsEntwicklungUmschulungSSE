@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GitHub\\umschulungSEIntro\\CityLandRiver\\CityLandRiver\\CityLandRiver.csproj",
-      "projectName": "CityLandRiver",
-      "projectPath": "D:\\GitHub\\umschulungSEIntro\\CityLandRiver\\CityLandRiver\\CityLandRiver.csproj",
+      "projectUniqueName": "D:\\GitHub\\umschulungSEIntro\\CityLandRiver\\CityLandRiver\\13CityLandRiver.csproj",
+      "projectName": "13CityLandRiver",
+      "projectPath": "D:\\GitHub\\umschulungSEIntro\\CityLandRiver\\CityLandRiver\\13CityLandRiver.csproj",
       "packagesPath": "C:\\Users\\Mastermind\\.nuget\\packages\\",
       "outputPath": "D:\\GitHub\\umschulungSEIntro\\CityLandRiver\\CityLandRiver\\obj\\",
       "projectStyle": "PackageReference",

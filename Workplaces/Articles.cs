@@ -13,5 +13,8 @@ namespace ShoppingMall
             this.price = price;
             WriteLine($"Article Number{this.id},\"{this.desc}\", instantiated.");
             }
+        public int Id { get => id; set => id = value; }
+        public string Desc { get => desc; set => desc = value; }
+        public decimal Price { get => price; set => price = value; }
         }
     }
