@@ -33,8 +33,8 @@
             this.items = items;
             this.weapons = weapons;
             this.armors = armors;
-            this.dmg = weapons[0].DmgValue;
-            this.ar = armors[0].ArValue;
+            this.dmg = weapons[0].dmgValue;
+            this.ar = armors[0].arValue;
             this.dialog = dialog;
             }
 
