@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5cGSgQxBYN1/PX7jnytaFDeeJKpF+gOEEdcgfM8CkiJhFnvraa/9b7nRZ7UB1aB9D2kNn1zLKTOKHTbA3hIKBQ==",
+  "dgSpecHash": "L/qS2rQzQXSGGm7W/ORCwLVuxeCtmohzye4XQOh2xqFZvDeda0Fvf8M7GtT/SZXyJAVuLP3dEuBHtRPDYhxqqg==",
   "success": true,
-  "projectFilePath": "D:\\GitHub\\umschulungSEIntro\\PasswordTester\\03PasswordTester.csproj",
+  "projectFilePath": "D:\\GitHub\\AnwendungsEntwicklungUmschulungSSE\\03PasswordTester\\03PasswordTester.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

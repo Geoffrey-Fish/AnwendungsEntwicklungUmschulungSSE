@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GitHub\\umschulungSEIntro\\SPSSL\\09StonePaperScissorsSpockLizard.csproj",
+      "projectUniqueName": "D:\\GitHub\\AnwendungsEntwicklungUmschulungSSE\\09StonePaperScissorsSpockLizard\\09StonePaperScissorsSpockLizard.csproj",
       "projectName": "09StonePaperScissorsSpockLizard",
-      "projectPath": "D:\\GitHub\\umschulungSEIntro\\SPSSL\\09StonePaperScissorsSpockLizard.csproj",
+      "projectPath": "D:\\GitHub\\AnwendungsEntwicklungUmschulungSSE\\09StonePaperScissorsSpockLizard\\09StonePaperScissorsSpockLizard.csproj",
       "packagesPath": "C:\\Users\\Mastermind\\.nuget\\packages\\",
-      "outputPath": "D:\\GitHub\\umschulungSEIntro\\SPSSL\\obj\\",
+      "outputPath": "D:\\GitHub\\AnwendungsEntwicklungUmschulungSSE\\09StonePaperScissorsSpockLizard\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "F2+IqK1zNcECfpxvBgy8SGn7Ctj9zZbjaGRT/q6cBUv2x0ChKrseH8Aa+NieIOEe9e6Cjd8NJOnaGYfflSSJwQ==",
+  "dgSpecHash": "1J5SCIEqO7VRezP9VIFOpsCbGjewPhIxXiNYI6rD3P+YNHRMDAaPbQQfXGVwjTbtSwvRfEK1zXGtU+CjeMh/kg==",
   "success": true,
-  "projectFilePath": "D:\\GitHub\\umschulungSEIntro\\BubbleSort\\11BubbleSort.csproj",
+  "projectFilePath": "D:\\GitHub\\AnwendungsEntwicklungUmschulungSSE\\11BubbleSort\\11BubbleSort.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vASGGtxu4PfYxMoL6h265WgLXCCjMu4uuuLNypb2wGA9pmpgnzEOl0pY++H3a0rsydigjdNqBwGTMY/AK8JBmA==",
+  "dgSpecHash": "6GK6Rx4HT4SQJSxTRg4lWiObwRNAPl/sDWhkQwR3ncBpfyG0l7xj59sZrR8del/pLdIJLcQQYpMZS+9dw6g5xA==",
   "success": true,
-  "projectFilePath": "D:\\GitHub\\umschulungSEIntro\\carDealer\\12Vehicles.csproj",
+  "projectFilePath": "D:\\GitHub\\AnwendungsEntwicklungUmschulungSSE\\12CarDealer\\12CarDealer.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GitHub\\umschulungSEIntro\\PasswordTester\\03PasswordTester.csproj",
+      "projectUniqueName": "D:\\GitHub\\AnwendungsEntwicklungUmschulungSSE\\03PasswordTester\\03PasswordTester.csproj",
       "projectName": "03PasswordTester",
-      "projectPath": "D:\\GitHub\\umschulungSEIntro\\PasswordTester\\03PasswordTester.csproj",
+      "projectPath": "D:\\GitHub\\AnwendungsEntwicklungUmschulungSSE\\03PasswordTester\\03PasswordTester.csproj",
       "packagesPath": "C:\\Users\\Mastermind\\.nuget\\packages\\",
-      "outputPath": "D:\\GitHub\\umschulungSEIntro\\PasswordTester\\obj\\",
+      "outputPath": "D:\\GitHub\\AnwendungsEntwicklungUmschulungSSE\\03PasswordTester\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

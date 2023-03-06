@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rtaPRFukwVpy9JT9iXnUOcCU0Oj51I8zyBeBd+FzEEbsmD1s4piPYx44UbbMStfrk8I7kmVLqUNgyFhkU/g2WQ==",
+  "dgSpecHash": "lJAjjj1Kqm9GDXqOGoOXK8bb2HKxoKQfwIJbeeORYtcPohEGJEj6gt8GW/9XRnhnKoLWi1OMpqHBUCdsMGdOHA==",
   "success": true,
-  "projectFilePath": "D:\\GitHub\\umschulungSEIntro\\01HelloWorld\\01HelloWorld.csproj",
+  "projectFilePath": "D:\\GitHub\\AnwendungsEntwicklungUmschulungSSE\\01HelloWorld\\01HelloWorld.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

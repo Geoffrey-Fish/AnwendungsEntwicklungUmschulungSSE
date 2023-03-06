@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\GitHub\\umschulungSEIntro\\Lotto49Array\\10Lotto49Array.csproj": {}
+    "D:\\GitHub\\AnwendungsEntwicklungUmschulungSSE\\10Lotto49Array\\10Lotto49Array.csproj": {}
   },
   "projects": {
-    "D:\\GitHub\\umschulungSEIntro\\Lotto49Array\\10Lotto49Array.csproj": {
+    "D:\\GitHub\\AnwendungsEntwicklungUmschulungSSE\\10Lotto49Array\\10Lotto49Array.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GitHub\\umschulungSEIntro\\Lotto49Array\\10Lotto49Array.csproj",
+        "projectUniqueName": "D:\\GitHub\\AnwendungsEntwicklungUmschulungSSE\\10Lotto49Array\\10Lotto49Array.csproj",
         "projectName": "10Lotto49Array",
-        "projectPath": "D:\\GitHub\\umschulungSEIntro\\Lotto49Array\\10Lotto49Array.csproj",
+        "projectPath": "D:\\GitHub\\AnwendungsEntwicklungUmschulungSSE\\10Lotto49Array\\10Lotto49Array.csproj",
         "packagesPath": "C:\\Users\\Mastermind\\.nuget\\packages\\",
-        "outputPath": "D:\\GitHub\\umschulungSEIntro\\Lotto49Array\\obj\\",
+        "outputPath": "D:\\GitHub\\AnwendungsEntwicklungUmschulungSSE\\10Lotto49Array\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

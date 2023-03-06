@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\GitHub\\umschulungSEIntro\\Polymorphism\\16Polymorphism.csproj": {}
+    "D:\\GitHub\\AnwendungsEntwicklungUmschulungSSE\\16Polymorphism\\16Polymorphism.csproj": {}
   },
   "projects": {
-    "D:\\GitHub\\umschulungSEIntro\\Polymorphism\\16Polymorphism.csproj": {
+    "D:\\GitHub\\AnwendungsEntwicklungUmschulungSSE\\16Polymorphism\\16Polymorphism.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GitHub\\umschulungSEIntro\\Polymorphism\\16Polymorphism.csproj",
+        "projectUniqueName": "D:\\GitHub\\AnwendungsEntwicklungUmschulungSSE\\16Polymorphism\\16Polymorphism.csproj",
         "projectName": "16Polymorphism",
-        "projectPath": "D:\\GitHub\\umschulungSEIntro\\Polymorphism\\16Polymorphism.csproj",
+        "projectPath": "D:\\GitHub\\AnwendungsEntwicklungUmschulungSSE\\16Polymorphism\\16Polymorphism.csproj",
         "packagesPath": "C:\\Users\\Mastermind\\.nuget\\packages\\",
-        "outputPath": "D:\\GitHub\\umschulungSEIntro\\Polymorphism\\obj\\",
+        "outputPath": "D:\\GitHub\\AnwendungsEntwicklungUmschulungSSE\\16Polymorphism\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

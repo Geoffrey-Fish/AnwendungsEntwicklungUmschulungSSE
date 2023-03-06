@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\GitHub\\umschulungSEIntro\\plz\\08PostLeitZahl.csproj": {}
+    "D:\\GitHub\\AnwendungsEntwicklungUmschulungSSE\\08PostLeitZahl\\08PostLeitZahl.csproj": {}
   },
   "projects": {
-    "D:\\GitHub\\umschulungSEIntro\\plz\\08PostLeitZahl.csproj": {
+    "D:\\GitHub\\AnwendungsEntwicklungUmschulungSSE\\08PostLeitZahl\\08PostLeitZahl.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GitHub\\umschulungSEIntro\\plz\\08PostLeitZahl.csproj",
+        "projectUniqueName": "D:\\GitHub\\AnwendungsEntwicklungUmschulungSSE\\08PostLeitZahl\\08PostLeitZahl.csproj",
         "projectName": "08PostLeitZahl",
-        "projectPath": "D:\\GitHub\\umschulungSEIntro\\plz\\08PostLeitZahl.csproj",
+        "projectPath": "D:\\GitHub\\AnwendungsEntwicklungUmschulungSSE\\08PostLeitZahl\\08PostLeitZahl.csproj",
         "packagesPath": "C:\\Users\\Mastermind\\.nuget\\packages\\",
-        "outputPath": "D:\\GitHub\\umschulungSEIntro\\plz\\obj\\",
+        "outputPath": "D:\\GitHub\\AnwendungsEntwicklungUmschulungSSE\\08PostLeitZahl\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

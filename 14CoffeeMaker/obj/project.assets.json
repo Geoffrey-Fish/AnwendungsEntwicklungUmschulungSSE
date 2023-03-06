@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GitHub\\umschulungSEIntro\\KaffeeMaschine\\14CoffeeMaker.csproj",
+      "projectUniqueName": "D:\\GitHub\\AnwendungsEntwicklungUmschulungSSE\\14CoffeeMaker\\14CoffeeMaker.csproj",
       "projectName": "14CoffeeMaker",
-      "projectPath": "D:\\GitHub\\umschulungSEIntro\\KaffeeMaschine\\14CoffeeMaker.csproj",
+      "projectPath": "D:\\GitHub\\AnwendungsEntwicklungUmschulungSSE\\14CoffeeMaker\\14CoffeeMaker.csproj",
       "packagesPath": "C:\\Users\\Mastermind\\.nuget\\packages\\",
-      "outputPath": "D:\\GitHub\\umschulungSEIntro\\KaffeeMaschine\\obj\\",
+      "outputPath": "D:\\GitHub\\AnwendungsEntwicklungUmschulungSSE\\14CoffeeMaker\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

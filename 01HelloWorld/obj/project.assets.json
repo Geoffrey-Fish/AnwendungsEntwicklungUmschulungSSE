@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GitHub\\umschulungSEIntro\\01HelloWorld\\01HelloWorld.csproj",
+      "projectUniqueName": "D:\\GitHub\\AnwendungsEntwicklungUmschulungSSE\\01HelloWorld\\01HelloWorld.csproj",
       "projectName": "01HelloWorld",
-      "projectPath": "D:\\GitHub\\umschulungSEIntro\\01HelloWorld\\01HelloWorld.csproj",
+      "projectPath": "D:\\GitHub\\AnwendungsEntwicklungUmschulungSSE\\01HelloWorld\\01HelloWorld.csproj",
       "packagesPath": "C:\\Users\\Mastermind\\.nuget\\packages\\",
-      "outputPath": "D:\\GitHub\\umschulungSEIntro\\01HelloWorld\\obj\\",
+      "outputPath": "D:\\GitHub\\AnwendungsEntwicklungUmschulungSSE\\01HelloWorld\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

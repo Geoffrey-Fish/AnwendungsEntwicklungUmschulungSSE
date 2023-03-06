@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GitHub\\umschulungSEIntro\\colorChoose\\05colorChoose.csproj",
-      "projectName": "05colorChoose",
-      "projectPath": "D:\\GitHub\\umschulungSEIntro\\colorChoose\\05colorChoose.csproj",
+      "projectUniqueName": "D:\\GitHub\\AnwendungsEntwicklungUmschulungSSE\\05colorChoose\\05ColorChoose.csproj",
+      "projectName": "05ColorChoose",
+      "projectPath": "D:\\GitHub\\AnwendungsEntwicklungUmschulungSSE\\05colorChoose\\05ColorChoose.csproj",
       "packagesPath": "C:\\Users\\Mastermind\\.nuget\\packages\\",
-      "outputPath": "D:\\GitHub\\umschulungSEIntro\\colorChoose\\obj\\",
+      "outputPath": "D:\\GitHub\\AnwendungsEntwicklungUmschulungSSE\\05colorChoose\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

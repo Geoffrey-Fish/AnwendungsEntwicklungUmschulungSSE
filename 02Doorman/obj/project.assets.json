@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GitHub\\umschulungSEIntro\\Doorman\\02Doorman.csproj",
+      "projectUniqueName": "D:\\GitHub\\AnwendungsEntwicklungUmschulungSSE\\02Doorman\\02Doorman.csproj",
       "projectName": "02Doorman",
-      "projectPath": "D:\\GitHub\\umschulungSEIntro\\Doorman\\02Doorman.csproj",
+      "projectPath": "D:\\GitHub\\AnwendungsEntwicklungUmschulungSSE\\02Doorman\\02Doorman.csproj",
       "packagesPath": "C:\\Users\\Mastermind\\.nuget\\packages\\",
-      "outputPath": "D:\\GitHub\\umschulungSEIntro\\Doorman\\obj\\",
+      "outputPath": "D:\\GitHub\\AnwendungsEntwicklungUmschulungSSE\\02Doorman\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
