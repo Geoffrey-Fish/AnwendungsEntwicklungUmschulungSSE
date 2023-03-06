@@ -1,13 +1,32 @@
 ﻿using static System.Console;
 
-namespace RPG
+namespace RPGOne
     {
     class Program
         {
         static void Main(string[] args)
             {
+            bool Exit = false;
+            string? name = "";
             WriteLine("Proof of Concept for a simple CLI Dungeon adventure.\n" +
                 "Material gathered a year ago with Python.");
+
+            WriteLine("This is RPG One. A solo Adventure.");
+            WriteLine();
+            WriteLine("Welcome, stranger.\n" +
+                "How shall we call your poor soul?");
+            name = ReadLine();
+
+            //Main loop
+            while(Exit == false)
+                {
+                Narrative.Welcome(name);
+                Room1();
+
+
+                }
+
+
 
             //            from Player import *
             //from Character import *
@@ -40,7 +59,18 @@ namespace RPG
             //        _ = call('clear')
 
 
-            //    def status(self):
+            // 
+            //        print("MOVE:\n| (N)ORTH\n| (E)AST\n| (S)OUTH\n| (W)EST\n|")
+            //        print(" (L)OOK AT ME!\n| SHOW (R)OOM!\n|(M)AP?\n| ")
+            //        print("  (I)NVENTORY?\n| (Q)UIT GAME")
+            //        user_input = player.user_input()
+            //        if user_input == "N":
+            //            player.pos_y += 1
+            //            self.grid(player)
+            //        elif user_input == "S":
+            //            player.pos_y -= 1
+            //            self.grid(player)
+            //        elif user_input == "W":   def status(self):
             //        print(self.name + " IS INSTANTIATED")
             //         #TODO: I need a more fancy Intro, fuck dammnit!
 
@@ -64,17 +94,6 @@ namespace RPG
 
 
             //    def options(self,room,player):
-            //        print("MOVE:\n| (N)ORTH\n| (E)AST\n| (S)OUTH\n| (W)EST\n|")
-            //        print(" (L)OOK AT ME!\n| SHOW (R)OOM!\n|(M)AP?\n| ")
-            //        print("  (I)NVENTORY?\n| (Q)UIT GAME")
-            //        user_input = player.user_input()
-            //        if user_input == "N":
-            //            player.pos_y += 1
-            //            self.grid(player)
-            //        elif user_input == "S":
-            //            player.pos_y -= 1
-            //            self.grid(player)
-            //        elif user_input == "W":
             //            player.pos_x -= 1
             //            self.grid(player)
             //        elif user_input == "E":

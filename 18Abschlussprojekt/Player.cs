@@ -1,226 +1,285 @@
-﻿namespace RPGOne
+﻿using static System.Console;
+
+namespace RPGOne
     {
     internal class Player
         {
-        //        import random
-        //from Item import*
-        //from time import sleep
-        //from subprocess import call
+        private string name = "PLAYER";
+        private int pos_x = 0;
+        private int pos_y = 0;
+        private int? max_hp = null;
+        private int hp;
+        private int xp = 0;
+        private int gp = 0;
+        private int? st = null;
+        private int? dex = null;
+        private List<Item> items = new List<Item>();
+        private List<Weapon> weapons = new List<Weapon> { new ShortSword() };
+        private List<Armor> armors = new List<Armor> { new LeatherArmor() };
+        private int dmg;
+        private int ar;
 
-        //class Player:
-        //    def __init__(self):
-        //        self.name = "PLAYER"
-        //        self.pos_x = 0
-        //        self.pos_y = 0
-        //        self.max_hp = None
-        //        self.hp = self.max_hp
-        //        self.xp = 0
-        //        self.gp = 0
-        //        self.st = None
-        //        self.dex = None
-        //        self.items = []
-        //        self.weapons = [short_sword]
-        //        self.armors = [leather_armor]
-        //        self.dmg = self.weapons[0].dmg_value
-        //        self.ar = self.armors[0].ar_value
+        public void Status()
+            {
+            WriteLine(name + "`S POS X: " + pos_x);
+            WriteLine(name + "`S POS Y: " + pos_y);
+            WriteLine("HP: " + hp);
+            WriteLine("STR: " + st);
+            WriteLine("DEX: " + dex);
+            WriteLine("DMG: " + dmg);
+            WriteLine("AR: " + ar);
+            WriteLine("GP: " + gp);
+            WriteLine("XP: " + xp);
 
-        //    def status(self):
-        //        print(self.name + "`S POS X: " + str(self.pos_x))
-        //        print(self.name + "`S POS Y: " + str(self.pos_y))
-        //        print("HP: " + str(self.hp))
-        //        print("STR: " + str(self.st))
-        //        print("DEX: " + str(self.dex))
-        //        print("DMG: " + str(self.dmg))
-        //        print("AR: " + str(self.ar))
-        //        print("GP: " + str(self.gp))
-        //        print("XP: " + str(self.xp))
+            foreach(Item item in items)
+                {
+                WriteLine(item.Name);
+                }
 
-        //        for item in self.items:
-        //            print(item.name)
-        //        for weapon in self.weapons:
-        //            print(weapon.name)
-        //        for armor in self.armors:
-        //            print(armor.name)
+            foreach(Weapon weapon in weapons)
+                {
+                WriteLine(weapon.Name);
+                }
 
-        //    def user_input(self):
-        //        user_input = input(">>> ").upper()
-        //        return user_input
+            foreach(Armor armor in armors)
+                {
+                WriteLine(armor.Name);
+                }
+            }
 
-        //    def clear(self) :
-        //        _ = call('clear')
+        public string UserInput()
+            {
+            string? user_input = ReadLine().ToUpper();
+            return user_input;
+            }
 
-        //    def create(self):
-        //        #player.status()
-        //        print("CREATING YOU CHARACTER:")
-        //        print("(N)AME YOUR CHARACTER")
-        //        print("(R)OLL YOUR CHARACTER")
-        //        print("(P)LAY GAME")
-        //        user_input = self.user_input()
-        //        if user_input == "N":
-        //            print("WHAT IS YOUR NAME? ")
-        //            user_input = self.user_input()
-        //            self.name = user_input
-        //            print(self.name + " ?\nSOUNDS ABOUT RIGHT.")
-        //            sleep(1)
-        //            self.create()
-        //        elif user_input == "R":
-        //            print(":::::::::::::::::::::::::::::::::::::::::::::::::::::::::")
-        //            print("LET`S SEE YOUR HEALTH...")
-        //            print("ROLLING HP...")
-        //            sleep(1)
-        //            roll = self.roll_dice(20, 40)
-        //            self.hp = roll
-        //            print("YOU HAVE NOW " + str(self.hp) + " HP!")
-        //            sleep(1)
-        //            print("---------------------------------------------------------")
-        //            print("LET`S SEE YOUR MUSCLES THEN...")
-        //            print("ROLLING...")
-        //            sleep(1)
-        //            roll = self.roll_dice(20, 60)
-        //            self.st = roll
-        //            print("YOUR POWER IS " + str(self.st) + " !")
-        //            sleep(1)
-        //            print("---------------------------------------------------------")
-        //            print("AT LAST YOUR DEXTERITY...")
-        //            print("ROLLING...")
-        //            sleep(1)
-        //            roll = self.roll_dice(20, 60)
-        //            self.dex = roll
-        //            print(str(self.dex) + " IS YOUR DEXTERITY.")
-        //            print("---------------------------------------------------------")
-        //            sleep(1)
-        //            self.create()
-        //        elif user_input == "P":
-        //            if self.name is None or self.hp is None:
-        //                print(" FINISH MAKING YOUR CHARACTER!")
-        //                print("---------------------------------------------------------")
-        //                self.clear()
-        //                self.create()
-        //            else:
-        //                print("PLAY THE GAME!")
-        //                return 
-        //        else:
-        //            print("INVALID!\nCHOOSE AN OPTION:\n 'N', 'R' OR 'P'")
-        //            print("---------------------------------------------------------")
-        //            self.create()
+        public void Create()
+            {
+            WriteLine("CREATING YOUR CHARACTER:");
+            WriteLine("(N)AME YOUR CHARACTER");
+            WriteLine("(R)OLL YOUR CHARACTER");
+            WriteLine("(P)LAY GAME");
+            Write("==> ");
+            string user_input = UserInput();
 
-        //    def roll_dice(self,min,max) :
-        //        roll = random.randint(min, max)
-        //        print(self.name + " ROLLS: " + str(roll))
-        //        return roll
+            switch(user_input)
+                {
+                case "N":
+                    WriteLine("WHAT IS YOUR NAME?");
+                    user_input = UserInput();
+                    name = user_input;
+                    WriteLine($"{name}?\nSOUNDS ABOUT RIGHT.");
+                    Thread.Sleep(1000);
+                    Create();
+                    break;
+                case "R":
+                    WriteLine(":::::::::::::::::::::::::::::::::::::::::::::::::::::::::");
+                    WriteLine("LET'S SEE YOUR HEALTH...");
+                    WriteLine("ROLLING HP...");
+                    Thread.Sleep(1000);
+                    int roll = RollDice(20,40);
+                    hp = roll;
+                    WriteLine($"YOU HAVE NOW {hp} HP!");
+                    Thread.Sleep(1000);
+                    WriteLine("---------------------------------------------------------");
+                    WriteLine("LET'S SEE YOUR MUSCLES THEN...");
+                    WriteLine("ROLLING...");
+                    Thread.Sleep(1000);
+                    roll = RollDice(20,60);
+                    st = roll;
+                    WriteLine($"YOUR POWER IS {st} !");
+                    Thread.Sleep(1000);
+                    WriteLine("---------------------------------------------------------");
+                    WriteLine("AT LAST YOUR DEXTERITY...");
+                    WriteLine("ROLLING...");
+                    Thread.Sleep(1000);
+                    roll = RollDice(20,60);
+                    dex = roll;
+                    WriteLine($"{dex} IS YOUR DEXTERITY.");
+                    WriteLine("---------------------------------------------------------");
+                    Thread.Sleep(1000);
+                    Create();
+                    break;
+                case "P":
+                    if(name is null || hp is null)
+                        {
+                        WriteLine("FINISH MAKING YOUR CHARACTER!");
+                        WriteLine("---------------------------------------------------------");
+                        Clear();
+                        Create();
+                        }
+                    else
+                        {
+                        WriteLine("PLAY THE GAME!");
+                        return;
+                        }
+                    break;
+                default:
+                    WriteLine("INVALID!\nCHOOSE AN OPTION:\n 'N', 'R' OR 'P'");
+                    WriteLine("---------------------------------------------------------");
+                    Create();
+                    break;
+                }
+            }
+        public static int RollDice(string name,int min,int max)
+            {
+            Random Dice = new Random();
+            int roll = Dice.Next(min,max);
+            WriteLine("{0} rolled a {1}",name,roll);
+            return roll;
+            }
+        public void Inventory(Room room)
+            {
 
-        //    def inventory(self,room) :
-        //        def pick_up(room_obj_list,player_obj_list):
-        //            #for obj in room_obj_list:
-        //                #if obj in room_obj_list and len(room.enemies) == 0: #enemyscanning just for saftey purpose?
-        //            if len(room_obj_list)> 0:
-        //                for obj in room_obj_list:
-        //                    print(obj.name) 
-        //                    print("(P)ICK UP?\n| (N)EXT?\n| (B)ACK?")
-        //                    user_input = self.user_input()
-        //                    if user_input == "P":
-        //                        print(self.name + " PICKS UP " + obj.name)
-        //                        room_obj_list.remove(obj)
-        //                        player_obj_list.append(obj)
-        //                    elif user_input == "N":
-        //                        continue
-        //                    elif user_input == "B":
-        //                        pass #or return?? or options call?
-        //            else:
-        //                print("THERE IS NOTHING!WANNA DROP INSTEAD?\n| (Y)ES\n| (N)O")
-        //                user_input = self.user_input()
-        //                if user_input == "Y":
-        //                    drop(room)
-        //                elif user_input == "N":
-        //                    pass
+            WriteLine("INVENTORY OPTIONS:\n| (P)ICK UP\n| (D)ROP\n| (B)ACK");
+            string user_input = Console.ReadLine().ToUpper();
+            if(user_input == "P")
+                {
+                WriteLine("LOOK AT THE ITEMS HERE:");
+                Thread.Sleep(1000);
+                PickUp(room.items,this.items);
+                WriteLine("WHAT ABOUT THESE WEAPONS?");
+                Thread.Sleep(1000);
+                PickUp(room.weapons,this.weapons);
+                WriteLine("SOME ARMOR, MAYBE?");
+                Thread.Sleep(1000);
+                PickUp(room.armors,this.armors);
+                }
+            else if(user_input == "D")
+                {
+                Drop(room);
+                }
+            else if(user_input == "B")
+                {
+                Console.WriteLine("GOING BACK TO MOVEMENT MENU");
+                return;
+                }
+            void PickUp(List<Item> roomObjList,List<Item> playerObjList)
+                {
+                if(roomObjList.Count > 0)
+                    {
+                    foreach(Item obj in roomObjList)
+                        {
+                        WriteLine(obj.Name);
+                        WriteLine("(P)ICK UP?\n| (N)EXT?\n| (B)ACK?");
+                        string userInput = UserInput();
+                        if(userInput == "P")
+                            {
+                            WriteLine(Name + " PICKS UP " + obj.Name);
+                            roomObjList.Remove(obj);
+                            playerObjList.Add(obj);
+                            }
+                        else if(userInput == "N")
+                            {
+                            continue;
+                            }
+                        else if(userInput == "B")
+                            {
+                            // pass or return or options call?
+                            }
+                        }
+                    }
+                else
+                    {
+                    WriteLine("THERE IS NOTHING!WANNA DROP INSTEAD?\n| (Y)ES\n| (N)O");
+                    string userInput = UserInput();
+                    if(userInput == "Y")
+                        {
+                        Drop(room);
+                        }
+                    else if(userInput == "N")
+                        {
+                        // pass
+                        }
+                    }
+                }
 
-        //        def drop(room):
-        //            if len(self.items) == 0 and len(self.weapons) == 0 and len(self.armors) == 0:
-        //                print("OH BOY,HOW DID YOU GET NEKKID???CYA...")
-        //                self.grid(player)
-        //            print("DROP:\n| (I)TEM ? \n| (W)EAPON ?\n| (A)RMOR ?")
-        //            user_input = self.user_input()
-        //            if user_input == "I":
-        //                print("DROPPING ITEM")
-        //                for item in self.items:
-        //                    print("DROPPING " + item.name)
-        //                    print("You sure?\n| (Y)ES\n| OR (N)O")
-        //                    user_input = self.user_input()
-        //                    if user_input == "Y":
-        //                        self.items.remove(item)
-        //                        room.items.append(item)
-        //                    elif user_input == "N":
-        //                        continue
-        //                    else:
-        //                        print("WRONG INPUT, DUDE.")
-        //                        drop(room)
-        //            elif user_input == "W":
-        //                print("DROPPING WEAPON")
-        //                for weapon in self.weapons:
-        //                    print("DROPPING " + weapon.name)
-        //                    print("You sure?\n| (Y)ES\n| OR (N)O")
-        //                    user_input = self.user_input()
-        //                    if user_input == "Y":
-        //                        self.weapons.remove(weapon)
-        //                        room.weapons.append(weapon)
-        //                    elif user_input == "N":
-        //                        continue
-        //                    else:
-        //                        print("WRONG INPUT, DUDE.")
-        //                        drop(room)
-        //            elif user_input == "A":
-        //                print("DROPPING ARMOR")
-        //                for armor in self.armors:
-        //                    print("DROPPING " + armor.name)
-        //                    print("You sure?\n| (Y)ES\n| OR (N)O")
-        //                    user_input = self.user_input()
-        //                    if user_input == "Y":
-        //                        self.armors.remove(armor)
-        //                        room.armors.append(armor)
-        //                    elif user_input == "N":
-        //                        continue
-        //                    else:
-        //                        print("WRONG INPUT, DUDE.")
-        //                        drop(room)
-        //            else:
-        //                print("WRONG INPUT, GOOD LORD!")
-        //                drop(room)
-
-        //        print("INVENTORY OPTIONS: \n| (P)ICK UP \n| (D)ROP \n| (B)ACK")
-        //        user_input = self.user_input() 
-        //        if user_input == "P":
-        //            print("LOOK AT THE ITEMS HERE:")
-        //            sleep(1)
-        //            pick_up(room.items, self.items)
-        //            print("WHAT ABOUT THESE WEAPONS?")
-        //            sleep(1)
-        //            pick_up(room.weapons, self.weapons)
-        //            print("SOME ARMOR, MAYBE?")
-        //            sleep(1)
-        //            pick_up(room.armors, self.armors)
-        //        elif user_input == "D":
-        //            drop(room)
-        //        elif user_input == "B":
-        //            print("GOING BACK TO MOVEMENT MENU")
-        //            return
-
-        //    def queue_free(self, room):
-        //        if self.hp <= 0:
-        //            print("YOU DED!!11ELF")
-        //        for item in self.items:
-        //            self.items.remove(item)
-        //            room.items.append(item)
-        //        for weapon in self.weapons:
-        //            self.weapons.remove(weapon)
-        //            room.weapons.append(weapon)
-        //        for armor in self.armors:
-        //            self.armors.remove(armor)
-        //            room.armors.append(armor)
-        //        #loop = False some kind of exit strategy
-
-
-        //# Why the fuck now this following part in an external module???
-        //player = Player()
-
+            void Drop(Room room)
+                {
+                if(items.Count == 0 && weapons.Count == 0 && armors.Count == 0)
+                    {
+                    WriteLine("OH BOY,HOW DID YOU GET NEKKID???CYA...");
+                    Grid(player);
+                    }
+                WriteLine("DROP:\n| (I)TEM ? \n| (W)EAPON ?\n| (A)RMOR ?");
+                string userInput = UserInput();
+                if(userInput == "I")
+                    {
+                    WriteLine("DROPPING ITEM");
+                    foreach(Item item in items)
+                        {
+                        WriteLine("DROPPING " + item.Name);
+                        WriteLine("You sure?\n| (Y)ES\n| OR (N)O");
+                        string input = UserInput();
+                        if(input == "Y")
+                            {
+                            items.Remove(item);
+                            room.items.Add(item);
+                            }
+                        else if(input == "N")
+                            {
+                            continue;
+                            }
+                        else
+                            {
+                            WriteLine("WRONG INPUT, DUDE.");
+                            Drop(room);
+                            }
+                        }
+                    }
+                else if(userInput == "W")
+                    {
+                    WriteLine("DROPPING WEAPON");
+                    foreach(Weapon weapon in weapons)
+                        {
+                        WriteLine("DROPPING " + weapon.Name);
+                        WriteLine("You sure?\n| (Y)ES\n| OR (N)O");
+                        string input = UserInput();
+                        if(input == "Y")
+                            {
+                            weapons.Remove(weapon);
+                            room.weapons.Add(weapon);
+                            }
+                        else if(input == "N")
+                            {
+                            continue;
+                            }
+                        else
+                            {
+                            WriteLine("WRONG INPUT, DUDE.");
+                            Drop(room);
+                            }
+                        }
+                    }
+                else if(userInput == "A")
+                    {
+                    WriteLine("DROPPING ARMOR");
+                    foreach(Armor armor in armors)
+                        {
+                        WriteLine("DROPPING " + armor.Name);
+                        WriteLine("You sure?\n| (Y)ES\n| OR (N)O");
+                        string input = UserInput();
+                        if(input == "Y")
+                            {
+                            armors.Remove(armor);
+                            room.armors.Add(armor);
+                            }
+                        else if(input == "N")
+                            {
+                            continue;
+                            }
+                        else
+                            {
+                            WriteLine("WRONG INPUT, COME ON!");
+                            }
+                        }
+                    }
+                else
+                    {
+                    WriteLine("WRONG INPUT,GOOD LORD!!!");
+                    Drop(room);
+                    }
+                }
+            }
         }
     }

@@ -1,100 +1,119 @@
 ﻿namespace RPGOne
     {
-    internal class Character
+    public class Character
         {
-        //        import random
-        //from Item import*
+        public bool friend { get; set; }
+        public string name { get; set; }
+        public int pos_x { get; set; }
+        public int pos_y { get; set; }
+        public int max_hp { get; set; }
+        public int hp { get; set; }
+        public int st { get; set; }
+        public int dex { get; set; }
+        public int gp { get; set; }
+        public int xp { get; set; }
+        public List<Item> items { get; set; }
+        public List<Weapon> weapons { get; set; }
+        public List<Armor> armors { get; set; }
+        public int dmg { get; set; }
+        public int ar { get; set; }
+        public string dialog { get; set; }
 
+        public Character(bool friend,string name,int pos_x,int pos_y,int hp,int st,int dex,int gp,int xp,List<Item> items,List<Weapon> weapons,List<Armor> armors,string dialog)
+            {
+            this.friend = friend;
+            this.name = name;
+            this.pos_x = pos_x;
+            this.pos_y = pos_y;
+            this.hp = hp;
+            this.st = st;
+            this.dex = dex;
+            this.gp = gp;
+            this.xp = xp;
+            this.items = items;
+            this.weapons = weapons;
+            this.armors = armors;
+            this.dmg = weapons[0].DmgValue;
+            this.ar = armors[0].ArValue;
+            this.dialog = dialog;
+            }
 
-        //class Character:
-        //    def __init__(self, name, pos_x, pos_y, max_hp, st, dex, gp, xp,
-        //     items, weapons, armors, dialog):
-        //        self.name = name
-        //        self.pos_x = pos_x
-        //        self.pos_y = pos_y
-        //        self.max_hp = max_hp
-        //        self.hp = self.max_hp
-        //        self.st = st
-        //        self.dex = dex
-        //        self.gp = gp
-        //        self.xp = xp
-        //        self.items = items
-        //        self.weapons = weapons
-        //        self.armors = armors
-        //        self.dmg = self.weapons[0].dmg_value
-        //        self.ar = self.armors[0].ar_value
-        //        self.dialog = dialog
+        public void Status()
+            {
+            Console.WriteLine(this.name);
+            Console.WriteLine(this.name + " POS X: " + this.pos_x);
+            Console.WriteLine(this.name + " POS Y: " + this.pos_y);
+            Console.WriteLine("HP: " + this.hp);
+            Console.WriteLine("STR: " + this.st);
+            Console.WriteLine("DEX: " + this.dex);
+            Console.WriteLine("DMG: " + this.dmg);
+            Console.WriteLine("AR: " + this.ar);
+            Console.WriteLine("GP: " + this.gp);
+            Console.WriteLine("XP: " + this.xp);
 
-        //    def status(self):
-        //        print(self.name)
-        //        print(str(self.name) + " POS X: " + str(self.pos_x))
-        //        print(str(self.name) + " POS Y: " + str(self.pos_y))
-        //        print("HP: " + str(self.hp))
-        //        print("STR: " + str(self.st))
-        //        print("DEX: " + str(self.dex))
-        //        print("DMG: " + str(self.dmg))
-        //        print("AR: " + str(self.ar))
-        //        print("GP: " + str(self.gp))
-        //        print("XP: " + str(self.xp))
+            foreach(Item item in this.items)
+                {
+                Console.WriteLine("ITEMS: ");
+                Console.WriteLine(item.name);
+                }
+            foreach(Weapon weapon in this.weapons)
+                {
+                Console.WriteLine("WEAPONS: ");
+                Console.WriteLine(weapon.name);
+                }
+            foreach(Armor armor in this.armors)
+                {
+                Console.WriteLine("ARMORS: ");
+                Console.WriteLine(armor.Name);
+                }
+            }
 
-        //        for item in self.items:
-        //            print("ITEMS: ")
-        //            print(item.name)
-        //        for weapon in self.weapons:
-        //            print("WEAPONS: ")
-        //            print(weapon.name)
-        //        for armor in self.armors:
-        //            print("ARMORS: ")
-        //            print(armor.name)
+        public int RollDice(int min,int max)
+            {
+            int roll = new Random().Next(min,max);
+            Console.WriteLine(this.name + " ROLLS: " + roll);
+            return roll;
+            }
 
-        //    def roll_dice(self,min,max):
-        //        roll = random.randint(min, max)
-        //        print(self.name + " ROLLS: " + str(roll))
-        //        return roll
+        public void Dialog()
+            {
+            Console.WriteLine(this.dialog);
+            }
 
-        //    def dialog(self) : # test for chat
-        //        print(self.dialog)
+        public void QueueFree(Room room)
+            {
+            Console.WriteLine(this.name + " IS DEAD.");
+            foreach(Item item in this.items)
+                {
+                this.items.Remove(item);
+                room.items.Add(item);
+                }
+            foreach(Weapon weapon in this.weapons)
+                {
+                this.weapons.Remove(weapon);
+                room.weapons.Add(weapon);
+                }
+            foreach(Armor armor in this.armors)
+                {
+                this.armors.Remove(armor);
+                room.armors.Add(armor);
+                }
+            }
 
-        //    def queue_free(self,room):
-        //        print(self.name + " IS DEAD.")
-        //        for item in self.items:
-        //            self.items.remove(item)
-        //            room.items.append(item)
-        //        for weapon in self.weapons:
-        //            self.weapons.remove(weapon)
-        //            room.weapons.append(weapon)
-        //        for armor in self.armors:
-        //            self.armors.remove(armor)
-        //            room.armors.append(armor)
+        //bool friend, string name,int pos_x,int pos_y,int max_hp,int st,int dex,int gp,int xp,List<Item> items,List<Weapon> weapons,List<Armor> armors,string dialog
+        public static Character orc_peon = new Character(false,"ORC PEON",0,6,30,60,50,20,10,new List<Item> { Item.gem },new List<Weapon> { Weapon.short_sword },new List<Armor> { Armor.leather_armor },"DIE DIE DIE BART, DIE!!!");
 
-        //# name, pos_x, pos_y, max_hp, st, dex, gp, xp, items, weapons, armors
+        public static Character orc_peewee = new Character(false,"ORC PEEWEE",0,6,30,60,50,20,10,new List<Item> { Item.gem },new List<Weapon> { Weapon.short_sword },new List<Armor> { Armor.leather_armor },"DIEDABADUU!!!");
 
-        //orc_peon = Character("ORC PEON", 0, 0, 6, 30, 60, 50, 20,
-        //                     [gem],[short_sword],[leather_armor],
-        //                     "DIE DIE DIE BART, DIE!!!")
+        public static Character orc_boner = new Character(false,"ORC BONER",0,6,30,60,50,20,10,new List<Item> { Item.gem },new List<Weapon> { Weapon.short_sword },new List<Armor> { Armor.leather_armor },"DER BART, DER!!!");
 
-        //orc_peewee = Character("ORC PEEWEE", 0, 0, 6, 30, 60, 50, 20,
-        //                     [gem],[short_sword],[leather_armor],
-        //                     "DIEDABADUU!!!")
+        public static Character orc_baba = new Character(false,"ORC BABA",0,6,30,60,50,20,10,new List<Item> { Item.gem },new List<Weapon> { Weapon.short_sword },new List<Armor> { Armor.leather_armor },"LOREM IPSUM!!!");
 
-        //orc_boner = Character("ORC BONER", 0, 0, 6, 30, 60, 50, 20,
-        //                     [gem],[short_sword],[leather_armor],
-        //                         "DER BART, DER!!!")
+        public static Character friendly_wizard = new Character(true,"FRIENDLY WIZARD",0,6,30,60,50,20,10,new List<Item> { Item.gem },new List<Weapon> { Weapon.wizards_staff },new List<Armor> { Armor.cloth_robe },"HELLO ADVENTURER I AM A FRIENDLY WIZARD.I HAVE BROUGHT YOU TO THIS REALITY!");
 
-        //orc_baba = Character("ORC BABA", 0, 0, 6, 30, 60, 50, 20,
-        //                     [gem],[short_sword],[leather_armor],
-        //                         "LOREM IPSUM!!!")
+        public static Character rat_man = new Character(true,"RAT MAN",1,2,5,10,20,2,5,new List<Item> { Item.poison },new List<Weapon> { Weapon.stick },new List<Armor> { Armor.towel },"RAT TITTIES,FRESH RAT TITTIES!!!");
 
-
-        //friendly_wizard = Character("FRIENDLY WIZARD", 0, 0, 6, 30, 60, 50, 20,
-        //                            [],[wizards_staff],[cloth_robe],
-        //                            "HELLO ADVENTURER I AM A FRIENDLY WIZARD.I HAVE BROUGHT YOU TO THIS REALITY!")
-
-        //rat_man = Character("RAT MAN", 1, 2, 5, 10, 20, 2, 5,
-        //                    [poison],[stick],[towel], "RAT TITTIES,FRESH RAT TITTIES!!!")
-
-        //store_clerk = Character("STORE CLERK", 1, 0, 2, 3, 4, 5, 5,
-        //                        [gem, minor_health],[stick],[towel], "Hi THERE, STRANGER")
+        public static Character store_clerk = new Character(true,"STORE CLERK",1,0,2,3,4,5,5,new List<Item> { Item.gem,Item.minor_health },new List<Weapon> { Weapon.stick },new List<Armor> { Armor.towel },"Hi THERE, STRANGER");
 
         }
     }
