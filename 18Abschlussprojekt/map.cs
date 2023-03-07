@@ -11,6 +11,8 @@
             {
             this.name = name;
             }
+
+
         /// <summary>
         /// Right now no idea what I wanted with that
         /// </summary>
@@ -18,6 +20,8 @@
             {
             //like a way pointer #TODO
             }
+
+
         /// <summary>
         /// Seems like i wanted to remap this with visited rooms marked
         /// OR maybe Player Position???
@@ -30,10 +34,13 @@
             map.Add(key,value);
             Console.WriteLine(map);
             }
+
+
+
         /// <summary>
         /// Simple printout of the map.
         /// </summary>
-        public void Plan()
+        public static void Plan()
             {
             Console.WriteLine("" +
               "\n||||||||||||||||||\n" +

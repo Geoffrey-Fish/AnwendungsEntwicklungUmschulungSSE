@@ -9,8 +9,8 @@ namespace RPGOne
         //todo: include weight and think about
         //todo: dmg and ar
         public string name = "PLAYER";
-        public int pos_x = 0;
-        public int pos_y = 0;
+        public int posX = 0;
+        public int posY = 0;
         public int? max_hp = null;
         public int hp = 0;
         public int xp = 0;
@@ -22,6 +22,7 @@ namespace RPGOne
         public List<Armor> armors = new List<Armor> { };
         public int dmg; //by weapon
         public int ar; //armor
+
 
         /// <summary>
         /// Create Method is interactive
@@ -51,12 +52,13 @@ namespace RPGOne
                             $"SOUNDS ABOUT RIGHT.");
                         Thread.Sleep(1000);
                         break;
+
                     case "R":
                         WriteLine("---------------------");
                         WriteLine("LET'S SEE YOUR HEALTH...");
                         WriteLine("ROLLING HP...");
                         Thread.Sleep(1000);
-                        int roll = RollDice(name,20,40);
+                        int roll = RollDice(20,40);
                         hp = roll;
                         WriteLine($"YOU START WITH: {hp} HP!\n" +
                             $"SO YOUR HP CAP IS: {max_hp = hp * 4}");
@@ -66,7 +68,7 @@ namespace RPGOne
                         WriteLine("LET'S SEE YOUR MUSCLES THEN...");
                         WriteLine("ROLLING...");
                         Thread.Sleep(1000);
-                        roll = RollDice(name,20,60);
+                        roll = RollDice(20,60);
                         st = roll;
                         WriteLine($"YOUR POWER IS {st} !");
                         Thread.Sleep(1000);
@@ -75,11 +77,12 @@ namespace RPGOne
                         WriteLine("AT LAST YOUR DEXTERITY...");
                         WriteLine("ROLLING...");
                         Thread.Sleep(1000);
-                        roll = RollDice(name,20,60);
+                        roll = RollDice(20,60);
                         dex = roll;
                         WriteLine($"{dex} IS YOUR DEXTERITY.");
                         WriteLine("---------------------");
                         break;
+
                     case "P":
                         if(name is "PLAYER" || hp is 0)
                             {
@@ -108,7 +111,7 @@ namespace RPGOne
         /// Takes Userinput, checks and converts it and returns the value
         /// </summary>
         /// <returns>Users choice</returns>
-        public static string UserInput()
+        public string UserInput()
             {
             // TODO: Here is a typecheck missing!
             string? user_input = ReadLine().ToUpper().Trim();
@@ -122,8 +125,8 @@ namespace RPGOne
         /// </summary>
         public void Status()
             {
-            WriteLine(name + "`S POS X: " + pos_x);
-            WriteLine(name + "`S POS Y: " + pos_y);
+            WriteLine(name + "`S POS X: " + posX);
+            WriteLine(name + "`S POS Y: " + posY);
             WriteLine($"HP: {hp} OF: {max_hp}");
             WriteLine("STR: " + st);
             WriteLine("DEX: " + dex);
@@ -151,6 +154,7 @@ namespace RPGOne
                 }
             }
 
+
         /// <summary>
         /// Personal Dice machine
         /// </summary>
@@ -158,13 +162,14 @@ namespace RPGOne
         /// <param name="min">min value</param>
         /// <param name="max">max value -1</param>
         /// <returns></returns>
-        public static int RollDice(string name,int min,int max)
+        public int RollDice(int min,int max)
             {
             Random Dice = new Random();
             int roll = Dice.Next(min,max);
-            WriteLine("{0} rolled a {1}",name,roll);
+            WriteLine($"{name} rolled {roll}");
             return roll;
             }
+
 
         /// <summary>
         /// To look at the inventory whenever chosen
@@ -197,7 +202,7 @@ namespace RPGOne
                 return;
                 }
             }
-        public static List pickChangerItem(List room,List player)
+        public static List pickChangerItem(List<T> room,List<T> player)
             {
             List<T> roomi = new List<T> { };
             List<T> playeri = new List<T> { };
@@ -216,7 +221,7 @@ namespace RPGOne
 
 
         //todo: Big Problem to be solved regarding different List types
-        void PickUp(List<Item> roomObjList,List<Item> playerObjList)
+        void PickUp(List<T> roomObjList,List<T> playerObjList)
             {
             if(roomObjList.Count > 0)
                 {
