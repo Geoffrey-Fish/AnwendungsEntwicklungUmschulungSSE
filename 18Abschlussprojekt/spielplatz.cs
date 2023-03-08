@@ -1,4 +1,4 @@
-﻿namespace halilistsexy
+﻿/*namespace halilistsexy
     {
     class Programm
         {
@@ -35,3 +35,5 @@
             }
         }
     }
+
+*/

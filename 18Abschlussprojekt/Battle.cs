@@ -11,7 +11,7 @@
         /// </summary>
         /// <param name="attacker">Npcs stats</param>
         /// <param name="defender">Players stats</param>
-        public static void Battle(Character attacker,Player defender)
+        public static void Battle(Character attacker,Player defender,Room room)
             {
             Initiative(attacker,defender);
 
@@ -68,6 +68,14 @@
                     Console.WriteLine($"{attacker.name} misses {defender.name}.");
                     }
                 }
+
+            if(attacker.hp <= 0)
+                {
+                defender.xp += attacker.xp;
+                attacker.QueueFree(room);
+                room.npcs.Remove(attacker);
+                }
+
             }
         }
     }

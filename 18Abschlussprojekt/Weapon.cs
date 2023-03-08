@@ -107,7 +107,7 @@ namespace RPGOne
 
             WriteLine($"WHAT YOU WANNA SELL FROM 1 TO {player.weapons.Count} ?");
             //minus 1 because of the indexing
-            int userInput = int.Parse(player.UserInput()) - 1;
+            int userInput = int.Parse(ReadLine()) - 1;
             try
                 {
                 WriteLine($"SELLING {player.weapons[userInput].name}");

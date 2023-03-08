@@ -2,23 +2,39 @@
 
 namespace RPGOne
     {
+
     /// <summary>
     /// Every RPG needs a map!
     /// </summary>
     public class Map
         {
-        public string name { get; set; }
-
-
         /// <summary>
-        /// Constructor for an extra map. Unsure if I need this
+        /// Simple printout of the map.
         /// </summary>
-        /// <param name="name"></param>
-        public Map(string name)
+        public static void Plan(Room room,Player player)
             {
-            this.name = name;
+            WriteLine("" +
+                "||||||||||||||||||\n" +
+                "||||||none |||||||\n" +
+                "|none|orc  |none |\n" +
+                "|none|foes |store|\n" +
+                "|none|start|rat  |\n" +
+                "|none|gem  |none |\n" +
+                "||||||none |||||||\n" +
+                "||||||||||||||||||");
+            Program.Options(room,player);
+            //todo: should learn how to make a cli table for proper show of that map
             }
-
+        public static string[][] mapping ={
+                new string[] { "||||||", "||||||", "||||||" }, //[0][0],[0][1],[0][2]
+                new string[] { "||||||", "none |", "||||||" }, //[1][0],[1][1],[1][2]
+                new string[] { "|none|", "orc  |", "none |" }, //[2][0],[2][1],[2][2]
+                new string[] { "|none|", "foes |", "store|" }, //[3][0],[3][1],[3][2]
+                new string[] { "|none|", "start|", "rats |" }, //[4][0],[4][1],[4][2]
+                new string[] { "|none|", "gems |", "none |" }, //[5][0],[5][1],[5][2]
+                new string[] { "||||||", "none |", "||||||" }, //[6][0],[6][1],[6][2]
+                new string[] { "||||||", "||||||", "||||||" }  //[7][0],[7][1],[7][2]
+                };
 
         //todo: still wip
         /// <summary>
@@ -44,22 +60,5 @@ namespace RPGOne
             WriteLine(map);
             }
 
-
-        /// <summary>
-        /// Simple printout of the map.
-        /// </summary>
-        public static void Plan()
-            {
-            Console.WriteLine("" +
-                "||||||||||||||||||\n" +
-                "||||||none |||||||\n" +
-                "|none|orc  |none |\n" +
-                "|none|peon |store|\n" +
-                "|none|start|rat  |\n" +
-                "|none|gem  |none |\n" +
-                "||||||none |||||||\n" +
-                "||||||||||||||||||");
-            //should learn how to make a cli table for proper show of that map
-            }
         }
     }

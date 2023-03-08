@@ -39,15 +39,16 @@ namespace RPGOne
                 WriteLine("(R)OLL YOUR CHARACTER");
                 WriteLine("(P)LAY GAME");
                 Write("==> ");
-                string? user_input = UserInput();
+                string[] choice = new string[] { "N","R","P" };
+                string? user_input = UserInput(choice);
 
                 switch(user_input)
                     {
                     case "N":
                         WriteLine("WHAT IS YOUR NAME?");
                         Write("=>>");
-                        user_input = UserInput();
-                        this.name = user_input;
+                        string? name = ReadLine().ToUpper().Trim();
+                        this.name = name;
                         WriteLine($"{name}?\n" +
                             $"SOUNDS ABOUT RIGHT.");
                         Thread.Sleep(1000);
@@ -84,7 +85,7 @@ namespace RPGOne
                         break;
 
                     case "P":
-                        if(name is "PLAYER" || hp is 0)
+                        if(this.name is "PLAYER" || hp is 0)
                             {
                             Clear();
                             WriteLine("FINISH MAKING YOUR CHARACTER!");
@@ -94,7 +95,11 @@ namespace RPGOne
                         else
                             {
                             //Everything is ok, lets go and end the do while loop
-                            WriteLine("PLAY THE GAME!");
+                            //And don't let that poor fella walk naked!
+                            items.Add(Item.minor_health);
+                            weapons.Add(Weapon.short_sword);
+                            armors.Add(Armor.towel);
+                            WriteLine("HAVE FUN PLAYING THE GAME AND DON'T DIE!");
                             creation = true;
                             }
                         break;
@@ -106,15 +111,19 @@ namespace RPGOne
                 } while(!creation);
             }
 
-
         /// <summary>
         /// Takes Userinput, checks and converts it and returns the value
         /// </summary>
-        /// <returns>Users choice</returns>
-        public string UserInput()
+        /// <param name="array">Possible chars given</param>
+        /// <returns>Chosen char</returns>
+        public string UserInput(string[] array)
             {
-            // TODO: Here is a typecheck missing!
             string? user_input = ReadLine().ToUpper().Trim();
+            if(!array.Contains(user_input))
+                {
+                WriteLine("WRONG INPUT.");
+                UserInput(array);
+                }
             return user_input;
             }
 
@@ -125,33 +134,49 @@ namespace RPGOne
         /// </summary>
         public void Status()
             {
+            Clear();
+            WriteLine("-------POSITION---------");
+            WriteLine($"YOU ARE IN THE {Room.Locate(posX,posY)}");
             WriteLine(name + "`S POS X: " + posX);
             WriteLine(name + "`S POS Y: " + posY);
-            WriteLine($"HP: {hp} OF: {max_hp}");
-            WriteLine("STR: " + st);
-            WriteLine("DEX: " + dex);
-            WriteLine("DMG: " + dmg);
-            WriteLine("AR: " + ar);
-            WriteLine("GP: " + gp);
-            WriteLine("XP: " + xp);
-            WriteLine("---------------------");
-            WriteLine("Your Bag contains: ");
-            foreach(Item item in items)
+
+            WriteLine("-------STATS------------");
+            WriteLine($"HEALTH: {hp} OF: {max_hp}");
+            WriteLine("STRENGTH: " + st);
+            WriteLine("DEXTERITY: " + dex);
+            WriteLine("DAMAGE: " + dmg);
+            WriteLine("DEFENCE: " + ar);
+            WriteLine("EXPIERIENCE: " + xp);
+            WriteLine("GOLD: " + gp);
+
+            if(items.Count > 0)
                 {
-                WriteLine(item.name);
+                WriteLine("---------------------");
+                WriteLine("YOUR BAG CONTAINS: ");
+                foreach(Item item in items)
+                    {
+                    WriteLine(item.name);
+                    }
+                }
+            if(weapons.Count > 0)
+                {
+                WriteLine("---------------------");
+                WriteLine("YOUR WEAPONS: ");
+                foreach(Weapon weapon in weapons)
+                    {
+                    WriteLine(weapon.name);
+                    }
+                }
+            if(armors.Count > 0)
+                {
+                WriteLine("---------------------");
+                WriteLine("YOUR ARMOR: ");
+                foreach(Armor armor in armors)
+                    {
+                    WriteLine(armor.name);
+                    }
                 }
             WriteLine("---------------------");
-            WriteLine("Your Weapons: ");
-            foreach(Weapon weapon in weapons)
-                {
-                WriteLine(weapon.name);
-                }
-            WriteLine("---------------------");
-            WriteLine("Your Armor: ");
-            foreach(Armor armor in armors)
-                {
-                WriteLine(armor.name);
-                }
             }
 
 
@@ -166,41 +191,56 @@ namespace RPGOne
             {
             Random Dice = new Random();
             int roll = Dice.Next(min,max);
-            WriteLine($"{name} rolled {roll}");
+            WriteLine($"{name} ROLLED: {roll}");
             return roll;
             }
 
-        //todo: weapon and armor choose for active weapon
 
+        //todo: weapon and armor choose for active weapon
         /// <summary>
         /// To look at the inventory and interact with its contents
         /// todo: the weight might play here also!
         /// </summary>
-        /// <param name="room"> the room the player is at</param>
+        /// <param name="room"> The room the player is at</param>
+        /// <param name="player">The player</param>
         public void Inventory(Room room,Player player)
             {
-            WriteLine("INVENTORY OPTIONS:\n| (P)ICK UP\n| (D)ROP\n| (B)ACK");
-            string user_input = ReadLine().ToUpper();
+            Clear();
+            WriteLine("INVENTORY OPTIONS:\n" +
+                "| (P)ICK UP\n" +
+                "| (D)ROP\n" +
+                "| (B)ACK");
+            Write("==> ");
+            string[] choice = new string[] { "P","D","B" };
+            string user_input = UserInput(choice);
             if(user_input == "P")
                 {
+                if(room.items.Count == 0 && room.weapons.Count == 0 && room.armors.Count == 0)
+                    {
+                    WriteLine("SORRY,BUT THIS ROOM IS EMPTY!");
+                    }
                 WriteLine("LOOK AT THE ITEMS HERE:");
-                Thread.Sleep(1000);
+                Thread.Sleep(500);
                 PickUpItems(room,room.items,items);
                 WriteLine("WHAT ABOUT THESE WEAPONS?");
-                Thread.Sleep(1000);
+                Thread.Sleep(500);
                 PickUpWeapons(room,room.weapons,weapons);
                 WriteLine("SOME ARMOR, MAYBE?");
-                Thread.Sleep(1000);
+                Thread.Sleep(500);
                 PickUpArmors(room,room.armors,armors);
                 }
             else if(user_input == "D")
                 {
+                if(player.items.Count == 0 && player.weapons.Count == 0 && player.armors.Count == 0)
+                    {
+                    WriteLine("SORRY,BUT YOU ARE NEKKID, LOL");
+                    }
                 Drop(room);
                 }
             else if(user_input == "B")
                 {
-                Console.WriteLine("GOING BACK TO MOVEMENT MENU");
-                return;
+                WriteLine("GOING BACK TO MOVEMENT MENU");
+                Program.Grid(this);
                 }
             }
 
@@ -219,7 +259,8 @@ namespace RPGOne
                     {
                     WriteLine(obj.name);
                     WriteLine("(P)ICK UP?\n| (N)EXT?\n| (B)ACK?");
-                    string userInput = UserInput();
+                    string[] choice = new string[] { "P","N","B" };
+                    string userInput = UserInput(choice);
                     if(userInput == "P")
                         {
                         WriteLine(name + " PICKS UP " + obj.name);
@@ -239,7 +280,8 @@ namespace RPGOne
             else
                 {
                 WriteLine("THERE IS NOTHING!WANNA DROP INSTEAD?\n| (Y)ES\n| (N)O");
-                string userInput = UserInput();
+                string[] choice = new string[] { "Y","N" };
+                string userInput = UserInput(choice);
                 if(userInput == "Y")
                     {
                     Drop(room);
@@ -266,7 +308,8 @@ namespace RPGOne
                     {
                     WriteLine(obj.name);
                     WriteLine("(P)ICK UP?\n| (N)EXT?\n| (B)ACK?");
-                    string userInput = UserInput();
+                    string[] choice = new string[] { "P","N","B" };
+                    string userInput = UserInput(choice);
                     if(userInput == "P")
                         {
                         WriteLine(name + " PICKS UP " + obj.name);
@@ -286,7 +329,8 @@ namespace RPGOne
             else
                 {
                 WriteLine("THERE IS NOTHING!WANNA DROP INSTEAD?\n| (Y)ES\n| (N)O");
-                string userInput = UserInput();
+                string[] choice = new string[] { "Y","N" };
+                string userInput = UserInput(choice);
                 if(userInput == "Y")
                     {
                     Drop(room);
@@ -313,7 +357,8 @@ namespace RPGOne
                     {
                     WriteLine(obj.name);
                     WriteLine("(P)ICK UP?\n| (N)EXT?\n| (B)ACK?");
-                    string userInput = UserInput();
+                    string[] choice = new string[] { "P","N","B" };
+                    string userInput = UserInput(choice);
                     if(userInput == "P")
                         {
                         WriteLine(name + " PICKS UP " + obj.name);
@@ -333,7 +378,8 @@ namespace RPGOne
             else
                 {
                 WriteLine("THERE IS NOTHING!WANNA DROP INSTEAD?\n| (Y)ES\n| (N)O");
-                string userInput = UserInput();
+                string[] choice = new string[] { "Y","N" };
+                string userInput = UserInput(choice);
                 if(userInput == "Y")
                     {
                     Drop(room);
@@ -358,7 +404,8 @@ namespace RPGOne
                 Program.Grid(this);
                 }
             WriteLine("DROP:\n| (I)TEM ? \n| (W)EAPON ?\n| (A)RMOR ?");
-            string userInput = UserInput();
+            string[] choice = new string[] { "I","W","A" };
+            string userInput = UserInput(choice);
             if(userInput == "I")
                 {
                 WriteLine("DROPPING ITEM");
@@ -366,7 +413,8 @@ namespace RPGOne
                     {
                     WriteLine("DROPPING " + item.name);
                     WriteLine("You sure?\n| (Y)ES\n| OR (N)O");
-                    string input = UserInput();
+                    string[] choice2 = new string[] { "Y","N" };
+                    string input = UserInput(choice2);
                     if(input == "Y")
                         {
                         items.Remove(item);
@@ -390,7 +438,8 @@ namespace RPGOne
                     {
                     WriteLine("DROPPING " + weapon.name);
                     WriteLine("You sure?\n| (Y)ES\n| OR (N)O");
-                    string input = UserInput();
+                    string[] choice3 = new string[] { "Y","N" };
+                    string input = UserInput(choice3);
                     if(input == "Y")
                         {
                         weapons.Remove(weapon);
@@ -414,7 +463,8 @@ namespace RPGOne
                     {
                     WriteLine("DROPPING " + armor.name);
                     WriteLine("You sure?\n| (Y)ES\n| OR (N)O");
-                    string input = UserInput();
+                    string[] choice4 = new string[] { "Y","N" };
+                    string input = UserInput(choice4);
                     if(input == "Y")
                         {
                         armors.Remove(armor);

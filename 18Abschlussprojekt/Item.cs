@@ -43,7 +43,7 @@ namespace RPGOne
 
             WriteLine($"WHICH NUMBER DO YOU CHOOSE FROM 1 TO {shop.items.Count} ?");
 
-            var userInput = int.Parse(ReadLine());
+            var userInput = int.Parse(ReadLine()) - 1;
 
             try
                 {
@@ -94,7 +94,7 @@ namespace RPGOne
 
             WriteLine($"WHAT YOU WANNA SELL FROM 1 TO {player.items.Count} ?");
             //minus 1 because of the indexing
-            int userInput = int.Parse(player.UserInput()) - 1;
+            int userInput = int.Parse(ReadLine()) - 1;
             try
                 {
                 WriteLine($"SELLING {player.items[userInput].name} !");

@@ -66,28 +66,30 @@ namespace RPGOne
         /// </summary>
         public void Status()
             {
-            WriteLine(this.name);
-            WriteLine(this.name + " POS X: " + this.pos_x);
-            WriteLine(this.name + " POS Y: " + this.pos_y);
-            WriteLine("HP: " + this.hp);
-            WriteLine("STR: " + this.st);
-            WriteLine("DEX: " + this.dex);
-            WriteLine("DMG: " + this.dmg);
-            WriteLine("AR: " + this.ar);
-            WriteLine("GP: " + this.gp);
-            WriteLine("XP: " + this.xp);
+            Clear();
+            WriteLine("---NPC-POSITION---------");
+            WriteLine(name + "`S POS X: " + pos_x);
+            WriteLine(name + "`S POS Y: " + pos_y);
+            WriteLine("---NPC-STATS------------");
+            WriteLine($"HEALTH: {hp} OF: {max_hp}");
+            WriteLine("STRENGTH: " + st);
+            WriteLine("DEXTERITY: " + dex);
+            WriteLine("DAMAGE: " + dmg);
+            WriteLine("DEFENCE: " + ar);
+            WriteLine("EXPIERIENCE: " + xp);
+            WriteLine("GOLD: " + gp);
 
-            foreach(Item item in this.items)
+            foreach(Item item in items)
                 {
                 WriteLine("ITEMS: ");
                 WriteLine(item.name);
                 }
-            foreach(Weapon weapon in this.weapons)
+            foreach(Weapon weapon in weapons)
                 {
                 WriteLine("WEAPONS: ");
                 WriteLine(weapon.name);
                 }
-            foreach(Armor armor in this.armors)
+            foreach(Armor armor in armors)
                 {
                 WriteLine("ARMORS: ");
                 WriteLine(armor.name);
@@ -104,7 +106,7 @@ namespace RPGOne
         public int RollDice(int min,int max)
             {
             int roll = new Random().Next(min,max);
-            WriteLine(this.name + " ROLLS: " + roll);
+            WriteLine(name + " ROLLS: " + roll);
             return roll;
             }
 
@@ -114,7 +116,7 @@ namespace RPGOne
         /// </summary>
         public void Dialog()
             {
-            WriteLine(this.dialog);
+            WriteLine(dialog);
             }
 
 
@@ -124,20 +126,20 @@ namespace RPGOne
         /// <param name="room">Rooms Npcs</param>
         public void QueueFree(Room room)
             {
-            WriteLine(this.name + " IS DEAD.");
-            foreach(Item item in this.items)
+            WriteLine(name + " IS DEAD.");
+            foreach(Item item in items)
                 {
-                this.items.Remove(item);
+                items.Remove(item);
                 room.items.Add(item);
                 }
-            foreach(Weapon weapon in this.weapons)
+            foreach(Weapon weapon in weapons)
                 {
-                this.weapons.Remove(weapon);
+                weapons.Remove(weapon);
                 room.weapons.Add(weapon);
                 }
-            foreach(Armor armor in this.armors)
+            foreach(Armor armor in armors)
                 {
-                this.armors.Remove(armor);
+                armors.Remove(armor);
                 room.armors.Add(armor);
                 }
             }
@@ -153,7 +155,7 @@ namespace RPGOne
         public static Character orc_boner = new Character(false,"ORC BONER",0,6,30,60,50,20,10,new List<Item> { Item.gem },new List<Weapon> { Weapon.short_sword },new List<Armor> { Armor.leather_armor },"DER BART, DER!!!");
         public static Character orc_baba = new Character(false,"ORC BABA",0,6,30,60,50,20,10,new List<Item> { Item.gem },new List<Weapon> { Weapon.short_sword },new List<Armor> { Armor.leather_armor },"LOREM IPSUM!!!");
         //Friends
-        public static Character friendly_wizard = new Character(true,"FRIENDLY WIZARD",0,6,30,60,50,20,10,new List<Item> { Item.gem },new List<Weapon> { Weapon.wizards_staff },new List<Armor> { Armor.cloth_robe },"HELLO ADVENTURER I AM A FRIENDLY WIZARD.I HAVE BROUGHT YOU TO THIS REALITY!");
+        public static Character friendly_wizard = new Character(true,"FRIENDLY WIZARD",0,6,30,60,50,20,10,new List<Item> { Item.gem },new List<Weapon> { Weapon.wizards_staff },new List<Armor> { Armor.cloth_robe },"HELLO ADVENTURER!\n I AM A FRIENDLY WIZARD.\nI HAVE BROUGHT YOU TO THIS REALITY!");
         public static Character rat_man = new Character(true,"RAT MAN",1,2,5,10,20,2,5,new List<Item> { Item.poison },new List<Weapon> { Weapon.stick },new List<Armor> { Armor.towel },"RAT TITTIES,FRESH RAT TITTIES!!!");
         public static Character store_clerk = new Character(true,"STORE CLERK",1,0,2,3,4,5,5,new List<Item> { Item.gem,Item.minor_health },new List<Weapon> { Weapon.stick },new List<Armor> { Armor.towel },"Hi THERE, STRANGER");
 

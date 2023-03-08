@@ -51,14 +51,16 @@ namespace RPGOne
             {
             WriteLine("STORE MENU");
             WriteLine("(B)UY | (S)ELL | (L)EAVE");
-            string user_input = player.UserInput();
+            string[] choice = new string[] { "B","S","L" };
+            string user_input = player.UserInput(choice);
 
             if(user_input == "B")
                 {
                 //Here was my main battlefield because of the Lists and their uniqueness when paired to a class.
                 //So I exported Buy and Sell to the coressponding Classes, it makes calling the buy/sell method easy and concise.
                 WriteLine("(I)TEMS,(W)EAPONS,(A)RMOR?");
-                string user_input2 = player.UserInput();
+                string[] choice2 = new string[] { "I","W","A" };
+                string user_input2 = player.UserInput(choice2);
                 switch(user_input2)
                     {
                     case "I":
@@ -79,7 +81,8 @@ namespace RPGOne
             else if(user_input == "S")
                 {
                 WriteLine("(I)TEMS,(W)EAPONS,(A)RMOR?");
-                string user_input2 = player.UserInput();
+                string[] choice3 = new string[] { "I","W","A" };
+                string user_input2 = player.UserInput(choice3);
                 switch(user_input2)
                     {
                     case "I":

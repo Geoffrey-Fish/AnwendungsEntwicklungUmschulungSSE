@@ -17,6 +17,7 @@ namespace RPGOne
             WriteLine("This is RPG One. A solo Adventure.");
             WriteLine();
             WriteLine("Welcome, stranger.");
+            WriteLine("------------------------------------------");
             //Main loop
             while(true)
                 {
@@ -47,25 +48,25 @@ namespace RPGOne
             if(currentRoom == null)
                 {
                 // The player is not in any room
-                // Handle this error case appropriately
+                WriteLine("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+                WriteLine("LOOKS LIKE YOU ARE TRAPPED IN THE VOID.\n" +
+                    "SORRY PAL, THE GAME STOPS NOW.");
+                GameOver();
                 }
             else
                 {
+                Clear();
+                WriteLine("------------------------------------------");
                 currentRoom.Status();
                 foreach(var npc in currentRoom.npcs)
                     {
                     if(npc.friend == false)
                         {
-                        Battles.Battle(npc,player);
+                        Battles.Battle(npc,player,currentRoom);
                         /* Here was the battle function.
                          * Trying to put it in an extra class.
                          * If not working, rebuild here*/
-                        if(npc.hp <= 0)
-                            {
-                            player.xp += npc.xp;
-                            npc.QueueFree(currentRoom);
-                            currentRoom.npcs.Remove(npc);
-                            }
+
                         }
                     }
                 }
@@ -80,11 +81,23 @@ namespace RPGOne
         /// <param name="player">The Player himself in all his glory</param>
         public static void Options(Room room,Player player)
             {
-            WriteLine("MOVE:\n| (N)ORTH\n| (E)AST\n| (S)OUTH\n| (W)EST\n|");
-            WriteLine(" (L)OOK AT ME!\n| SHOW (R)OOM!\n|(M)AP?\n| ");
-            WriteLine("  (I)NVENTORY?\n| (Q)UIT GAME");
+            WriteLine("MOVE:\n" +
+                "| (N)ORTH\n" +
+                "| (E)AST\n" +
+                "| (S)OUTH\n" +
+                "| (W)EST\n" +
+                "|-------\n" +
+                "| (L)OOK AT ME!\n" +
+                "| SHOW (R)OOM!\n" +
+                "| (M)AP?\n" +
+                "|-------\n" +
+                "| (I)NVENTORY?\n" +
+                "| (Q)UIT GAME\n" +
+                "|-------");
 
-            string user_input = player.UserInput();
+            //build a stringArray and give it as possible choices.UserInput will check validity
+            string[] choices = new string[] { "N","E","S","W","L","R","M","I","Q" };
+            string user_input = player.UserInput(choices);
 
             if(user_input == "N")
                 {
@@ -110,7 +123,7 @@ namespace RPGOne
                 {
                 WriteLine("LOOK AT YOU!");
                 player.Status();
-                WriteLine("---------------------------------------------------------");
+                WriteLine("------------------------------------------");
                 Options(room,player);
                 }
             else if(user_input == "R")
@@ -123,12 +136,13 @@ namespace RPGOne
                 }
             else if(user_input == "M")
                 {
-                Map.Plan();
+                Map.Plan(room,player);
                 Options(room,player);
                 }
             else if(user_input == "I")
                 {
                 player.Inventory(room,player);
+                Options(room,player);
                 }
             else if(user_input == "Q")
                 {
@@ -138,7 +152,7 @@ namespace RPGOne
                 {
                 WriteLine("DUDE, WRONG INPUT!!!");
                 // maybe here after choose drop,pick up?
-                WriteLine("---------------------------------------------------------");
+                WriteLine("------------------------------------------");
                 Options(room,player);
                 }
             }
@@ -149,6 +163,10 @@ namespace RPGOne
         /// </summary>
         public static void GameOver()
             {
+            Clear();
+            WriteLine("GOODBYE!\n" +
+                "PLEASE PRESS ANY KEY TO GET OUT OF HERE.");
+            ReadKey();
             Environment.Exit(0);
             }
 
