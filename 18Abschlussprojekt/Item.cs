@@ -52,8 +52,10 @@ namespace RPGOne
                     WriteLine($"BUYING {shop.items[userInput].name} !" + Environment.NewLine);
 
                     player.gp -= shop.items[userInput].gpValue;
-                    player.items.Add(shop.items[userInput]);
+                    shop.gp += shop.items[userInput].gpValue;
+                    Item iChanger = shop.items[userInput];
                     shop.items.RemoveAt(userInput);
+                    player.items.Add(iChanger);
                     }
                 else
                     {
@@ -99,9 +101,13 @@ namespace RPGOne
                 {
                 WriteLine($"SELLING {player.items[userInput].name} !");
                 WriteLine($"{player.name} GETS: {player.items[userInput].gpValue} GOLD.");
+
                 player.gp += player.items[userInput].gpValue;//todo: make a small cut for the clerk, like 0.7 times. need double,though...
-                shop.items.Add(player.items[userInput]);
+                shop.gp -= player.items[userInput].gpValue;
+                Item iChanger = player.items[userInput];
                 player.items.RemoveAt(userInput);
+                shop.items.Add(iChanger);
+
                 }
             catch(ArgumentOutOfRangeException)
                 {

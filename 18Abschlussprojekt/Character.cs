@@ -55,7 +55,7 @@ namespace RPGOne
             this.items = items;
             this.weapons = weapons;
             this.armors = armors;
-            this.dmg = weapons[0].dmgValue;
+            this.dmg = weapons[0].dmgValue; //gets calculated while fighting
             this.ar = armors[0].arValue;
             this.dialog = dialog;
             }
@@ -126,22 +126,67 @@ namespace RPGOne
         /// <param name="room">Rooms Npcs</param>
         public void QueueFree(Room room)
             {
-            WriteLine(name + " IS DEAD.");
-            foreach(Item item in items)
+            WriteLine(name + " IS DEAD.\n" +
+                "WELL DONE!\n" +
+                "THE BODY DROPS HIS LOOT TO THE GROUND.");
+            if(items.Count > 0)
                 {
-                items.Remove(item);
-                room.items.Add(item);
+                if(items.Count > 1)
+                    {
+                    foreach(Item item in items)
+                        {
+                        Item iChanger = item;
+                        items.Remove(item);
+                        room.items.Add(iChanger);
+                        }
+                    }
+                else if(items.Count == 1)
+                    {
+                    Item iChanger = items[0];
+                    items.RemoveAt(0);
+                    room.items.Add(iChanger);
+                    }
                 }
-            foreach(Weapon weapon in weapons)
+            if(weapons.Count > 0)
                 {
-                weapons.Remove(weapon);
-                room.weapons.Add(weapon);
+                if(weapons.Count > 1)
+                    {
+                    foreach(Weapon weapon in weapons)
+                        {
+                        Weapon wChanger = weapon;
+                        weapons.Remove(weapon);
+                        room.weapons.Add(wChanger);
+                        }
+                    }
+                else if(weapons.Count == 1)
+                    {
+                    Weapon wChanger = weapons[0];
+                    weapons.RemoveAt(0);
+                    room.weapons.Add(wChanger);
+                    }
                 }
-            foreach(Armor armor in armors)
+            if(armors.Count > 0)
                 {
-                armors.Remove(armor);
-                room.armors.Add(armor);
+                if(armors.Count > 1)
+                    {
+                    foreach(Armor armor in armors)
+                        {
+                        Armor aChanger = armor;
+                        armors.Remove(armor);
+                        room.armors.Add(aChanger);
+                        }
+                    }
+                else if(armors.Count == 1)
+                    {
+                    Armor aChanger = armors[0];
+                    armors.RemoveAt(0);
+                    room.armors.Add(aChanger);
+                    }
                 }
+            WriteLine("IF YOU WANT TO LOOT,CHOOSE (I)NVENTORY IN THE MENU.\n" +
+                "CONTINUE WITH ANY KEY:");
+            Write("==>");
+            ReadKey();
             }
 
 

@@ -104,6 +104,7 @@ namespace RPGOne
                 {
                 //Back to main menu
                 WriteLine("SEE YOU! COME BACK SOMETIME!");
+                // Program.Options(room,player);
                 return;
                 }
             else

@@ -14,14 +14,14 @@ namespace RPGOne
         public int? max_hp = null;
         public int hp = 0;
         public int xp = 0;
-        public int gp = 0;
-        public int? st = null;
-        public int? dex = null;
+        public int gp = 10;
+        public int st = 0; //ToDo: Strength for Weight Calculations!
+        public int dex = 0;
         public List<Item> items = new List<Item>();
         public List<Weapon> weapons = new List<Weapon> { };
         public List<Armor> armors = new List<Armor> { };
-        public int dmg; //by weapon
-        public int ar; //armor
+        public int dmg; //defined by weapon
+        public int ar; //defined by armor
 
 
         /// <summary>
@@ -32,9 +32,11 @@ namespace RPGOne
             {
             //Do while for creation. Only full rolled char may start
             bool creation = false;
+            WriteLine("CREATING YOUR CHARACTER:");
+            WriteLine("PLEASE CHOOSE A NAME AND ROLL YOUR STATS!");
+            WriteLine("''''''''''''''''''''''''''''''''''''''''''");
             do
                 {
-                WriteLine("CREATING YOUR CHARACTER:");
                 WriteLine("(N)AME YOUR CHARACTER");
                 WriteLine("(R)OLL YOUR CHARACTER");
                 WriteLine("(P)LAY GAME");
@@ -52,20 +54,21 @@ namespace RPGOne
                         WriteLine($"{name}?\n" +
                             $"SOUNDS ABOUT RIGHT.");
                         Thread.Sleep(1000);
+                        Clear();
                         break;
 
                     case "R":
-                        WriteLine("---------------------");
+                        WriteLine("-------------------------");
                         WriteLine("LET'S SEE YOUR HEALTH...");
                         WriteLine("ROLLING HP...");
                         Thread.Sleep(1000);
-                        int roll = RollDice(20,40);
+                        int roll = RollDice(30,60);
                         hp = roll;
                         WriteLine($"YOU START WITH: {hp} HP!\n" +
-                            $"SO YOUR HP CAP IS: {max_hp = hp * 4}");
+                            $"SO YOUR HP CAP IS: {max_hp = hp + 20}");
                         Thread.Sleep(1000);
 
-                        WriteLine("---------------------");
+                        WriteLine("------------------------------");
                         WriteLine("LET'S SEE YOUR MUSCLES THEN...");
                         WriteLine("ROLLING...");
                         Thread.Sleep(1000);
@@ -74,14 +77,14 @@ namespace RPGOne
                         WriteLine($"YOUR POWER IS {st} !");
                         Thread.Sleep(1000);
 
-                        WriteLine("---------------------");
+                        WriteLine("-------------------------");
                         WriteLine("AT LAST YOUR DEXTERITY...");
                         WriteLine("ROLLING...");
                         Thread.Sleep(1000);
                         roll = RollDice(20,60);
                         dex = roll;
                         WriteLine($"{dex} IS YOUR DEXTERITY.");
-                        WriteLine("---------------------");
+                        WriteLine("-------------------------");
                         break;
 
                     case "P":
@@ -89,17 +92,22 @@ namespace RPGOne
                             {
                             Clear();
                             WriteLine("FINISH MAKING YOUR CHARACTER!");
-                            WriteLine("---------------------");
+                            WriteLine("-----------------------------");
                             break;
                             }
                         else
                             {
-                            //Everything is ok, lets go and end the do while loop
                             //And don't let that poor fella walk naked!
                             items.Add(Item.minor_health);
                             weapons.Add(Weapon.short_sword);
                             armors.Add(Armor.towel);
+                            dmg = weapons[0].dmgValue;
+                            ar = armors[0].arValue;
+
+
+                            //Everything is ok, lets go and end the do while loop
                             WriteLine("HAVE FUN PLAYING THE GAME AND DON'T DIE!");
+                            Thread.Sleep(2000);
                             creation = true;
                             }
                         break;
@@ -264,8 +272,9 @@ namespace RPGOne
                     if(userInput == "P")
                         {
                         WriteLine(name + " PICKS UP " + obj.name);
+                        Item iChanger = obj;
                         roomObjList.Remove(obj);
-                        playerObjList.Add(obj);
+                        playerObjList.Add(iChanger);
                         }
                     else if(userInput == "N")
                         {
@@ -313,8 +322,9 @@ namespace RPGOne
                     if(userInput == "P")
                         {
                         WriteLine(name + " PICKS UP " + obj.name);
+                        Weapon wChanger = obj;
                         roomObjList.Remove(obj);
-                        playerObjList.Add(obj);
+                        playerObjList.Add(wChanger);
                         }
                     else if(userInput == "N")
                         {
@@ -362,8 +372,9 @@ namespace RPGOne
                     if(userInput == "P")
                         {
                         WriteLine(name + " PICKS UP " + obj.name);
+                        Armor aChanger = obj;
                         roomObjList.Remove(obj);
-                        playerObjList.Add(obj);
+                        playerObjList.Add(aChanger);
                         }
                     else if(userInput == "N")
                         {
@@ -417,8 +428,9 @@ namespace RPGOne
                     string input = UserInput(choice2);
                     if(input == "Y")
                         {
+                        Item iChanger = item;
                         items.Remove(item);
-                        room.items.Add(item);
+                        room.items.Add(iChanger);
                         }
                     else if(input == "N")
                         {
@@ -442,8 +454,9 @@ namespace RPGOne
                     string input = UserInput(choice3);
                     if(input == "Y")
                         {
+                        Weapon wChanger = weapon;
                         weapons.Remove(weapon);
-                        room.weapons.Add(weapon);
+                        room.weapons.Add(wChanger);
                         }
                     else if(input == "N")
                         {
@@ -467,8 +480,9 @@ namespace RPGOne
                     string input = UserInput(choice4);
                     if(input == "Y")
                         {
+                        Armor aChanger = armor;
                         armors.Remove(armor);
-                        room.armors.Add(armor);
+                        room.armors.Add(aChanger);
                         }
                     else if(input == "N")
                         {
@@ -485,6 +499,12 @@ namespace RPGOne
                 WriteLine("WRONG INPUT,GOOD LORD!!!");
                 Drop(room);
                 }
+            }
+        public static void DeadHero(Player player)
+            {
+            WriteLine($"DID I SAY YOU MAY DIE???\n" +
+                $"DID I, {player.name}?");
+            Program.GameOver();
             }
 
         /////

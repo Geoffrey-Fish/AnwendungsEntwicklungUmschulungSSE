@@ -12,17 +12,29 @@ namespace RPGOne
         static void Main(string[] args)
             {
             WriteLine("Proof of Concept for a simple CLI Dungeon adventure.\n" +
-                "Material gathered a year ago with Python.");
+                "I had the Idea for it a year ago\n" +
+                " as I started to learn coding with Python.\n" +
+                "Now, dear FABIAN WEHRLE,\n" +
+                "Please set your Terminalwindow to Full Height,\n" +
+                "else you might miss some outputs.\n" +
+                "Have Fun!");
+            Write("Continue with any key ==>");
+            ReadKey();
+            Clear();
 
-            WriteLine("This is RPG One. A solo Adventure.");
-            WriteLine();
+            WriteLine("This is RPG One. A solo Adventure.\n");
+
             WriteLine("Welcome, stranger.");
             WriteLine("------------------------------------------");
+            Thread.Sleep(2000);
+
             //Main loop
             while(true)
                 {
                 Player player = new Player();
-                Narrative.Welcome(player.name);
+                Narrative.Welcome(player);
+                Narrative.StartingRoom(player);
+                Thread.Sleep(1000);
                 Grid(player);
                 }
             }
@@ -53,6 +65,10 @@ namespace RPGOne
                     "SORRY PAL, THE GAME STOPS NOW.");
                 GameOver();
                 }
+            else if(currentRoom.posX == 1 && currentRoom.posY == 1)
+                {
+                Store.status(player);
+                }
             else
                 {
                 Clear();
@@ -63,13 +79,11 @@ namespace RPGOne
                     if(npc.friend == false)
                         {
                         Battles.Battle(npc,player,currentRoom);
-                        /* Here was the battle function.
-                         * Trying to put it in an extra class.
-                         * If not working, rebuild here*/
-
                         }
                     }
                 }
+            //Give current map pointers to map for unhiding new encountered rooms
+            Map.Path(currentRoom.mapX,currentRoom.mapY);
             Options(currentRoom,player);
             }
 
@@ -175,26 +189,23 @@ namespace RPGOne
         /// <summary>
         ///Invocation of the rooms we are in.
         ///</summary>
-        public static Room start_room = new Room("START ROOM","THIS IS THE STARTING ROOM",0,0,new List<Character> { Character.friendly_wizard },new List<Item> { },new List<Weapon> { },new List<Armor> { });
-        public static Room foe_room = new Room("ORC FOE ROOM","THIS IS THE ORC FOE ROOM",0,1,new List<Character> { Character.orc_peon,Character.orc_peewee,Character.orc_boner },new List<Item> { },new List<Weapon> { },new List<Armor> { });
-        public static Room gem_room = new Room("GEM ROOM","THIS IS THE GEM ROOM",0,-1,new List<Character> { },new List<Item> { Item.gem,Item.gem,Item.gem },new List<Weapon> { },new List<Armor> { });
-        public static Room orc_room = new Room("ORC ROOM","THIS IS AN ORC ROOM",0,2,new List<Character> { Character.orc_baba },new List<Item> { },new List<Weapon> { },new List<Armor> { });
-        public static Room rat_room = new Room("RAT ROOM","LOOK! THE RAT MAN!",1,0,new List<Character> { Character.rat_man },new List<Item> { },new List<Weapon> { },new List<Armor> { });
-        public static Room stor = new Room("STORE","BUY IT NOW!",1,1,new List<Character> { Character.store_clerk },new List<Item> { Item.gem,Item.gem,Item.poison },new List<Weapon> { Weapon.short_sword,Weapon.stick },new List<Armor> { Armor.leather_armor,Armor.cloth_robe,Armor.towel });
-
-        //todo:how to get to the store?
-        //shit name STOR because of problems otherwise, it calls store.status() wich leads to the store method...that brakes the game(From Python)
+        public static Room start_room = new Room("START ROOM","THIS IS THE STARTING ROOM",0,0,4,1,new List<Character> { Character.friendly_wizard },new List<Item> { },new List<Weapon> { },new List<Armor> { });
+        public static Room foe_room = new Room("ORC FOE ROOM","THIS IS THE ORC FOE ROOM",0,1,3,1,new List<Character> { Character.orc_peon },new List<Item> { },new List<Weapon> { },new List<Armor> { });
+        public static Room gem_room = new Room("GEM ROOM","THIS IS THE GEM ROOM",0,-1,5,1,new List<Character> { },new List<Item> { Item.gem,Item.gem,Item.gem },new List<Weapon> { },new List<Armor> { });
+        public static Room orc_room = new Room("ORC ROOM","THIS IS AN ORC ROOM",0,2,2,1,new List<Character> { Character.orc_baba },new List<Item> { },new List<Weapon> { },new List<Armor> { });
+        public static Room rat_room = new Room("RAT ROOM","LOOK! THE RAT MAN!",1,0,4,2,new List<Character> { Character.rat_man },new List<Item> { },new List<Weapon> { },new List<Armor> { });
+        public static Room stor = new Room("STORE","BUY IT NOW!",1,1,3,2,new List<Character> { Character.store_clerk },new List<Item> { Item.minor_health,Item.minor_health,Item.poison },new List<Weapon> { Weapon.short_sword,Weapon.stick },new List<Armor> { Armor.leather_armor,Armor.cloth_robe,Armor.towel });
         // the store is a class for itself...
 
         //these are just blockers, to be reworked laterwith waypoint tips
-        public static Room wallm1m1 = new Room("WALL","NO WAY,TURN AROUND",-1,-1,new List<Character> { },new List<Item> { },new List<Weapon> { },new List<Armor> { });
-        public static Room wall1m1 = new Room("WALL","NO WAY,TURN AROUND",1,-1,new List<Character> { },new List<Item> { },new List<Weapon> { },new List<Armor> { });
-        public static Room wallm10 = new Room("WALL","NO WAY,TURN AROUND",-1,0,new List<Character> { },new List<Item> { },new List<Weapon> { },new List<Armor> { });
-        public static Room wallm11 = new Room("WALL","NO WAY,TURN AROUND",-1,1,new List<Character> { },new List<Item> { },new List<Weapon> { },new List<Armor> { });
-        public static Room wallm12 = new Room("WALL","NO WAY,TURN AROUND",-1,2,new List<Character> { },new List<Item> { },new List<Weapon> { },new List<Armor> { });
-        public static Room wall12 = new Room("WALL","NO WAY,TURN AROUND",1,2,new List<Character> { },new List<Item> { },new List<Weapon> { },new List<Armor> { });
-        public static Room wall03 = new Room("WALL","NO WAY,TURN AROUND",0,3,new List<Character> { },new List<Item> { },new List<Weapon> { },new List<Armor> { });
-        public static Room wall0m2 = new Room("WALL","NO WAY,TURN AROUND",0,-2,new List<Character> { },new List<Item> { },new List<Weapon> { },new List<Armor> { });
+        public static Room wallm1m1 = new Room("WALL","NO WAY,TURN AROUND",-1,-1,5,0,new List<Character> { },new List<Item> { },new List<Weapon> { },new List<Armor> { });
+        public static Room wall1m1 = new Room("WALL","NO WAY,TURN AROUND",1,-1,5,2,new List<Character> { },new List<Item> { },new List<Weapon> { },new List<Armor> { });
+        public static Room wallm10 = new Room("WALL","NO WAY,TURN AROUND",-1,0,4,0,new List<Character> { },new List<Item> { },new List<Weapon> { },new List<Armor> { });
+        public static Room wallm11 = new Room("WALL","NO WAY,TURN AROUND",-1,1,3,0,new List<Character> { },new List<Item> { },new List<Weapon> { },new List<Armor> { });
+        public static Room wallm12 = new Room("WALL","NO WAY,TURN AROUND",-1,2,2,0,new List<Character> { },new List<Item> { },new List<Weapon> { },new List<Armor> { });
+        public static Room wall12 = new Room("WALL","NO WAY,TURN AROUND",1,2,2,2,new List<Character> { },new List<Item> { },new List<Weapon> { },new List<Armor> { });
+        public static Room wall03 = new Room("WALL","NO WAY,TURN AROUND",0,3,1,1,new List<Character> { },new List<Item> { },new List<Weapon> { },new List<Armor> { });
+        public static Room wall0m2 = new Room("WALL","NO WAY,TURN AROUND",0,-2,6,1,new List<Character> { },new List<Item> { },new List<Weapon> { },new List<Armor> { });
 
 
         /// <summary>
