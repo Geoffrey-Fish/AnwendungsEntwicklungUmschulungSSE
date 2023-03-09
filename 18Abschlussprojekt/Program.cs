@@ -13,18 +13,19 @@ namespace RPGOne
             {
             WriteLine("Proof of Concept for a simple CLI Dungeon adventure.\n" +
                 "I had the Idea for it a year ago\n" +
-                " as I started to learn coding with Python.\n" +
-                "Now, dear FABIAN WEHRLE,\n" +
-                "Please set your Terminalwindow to Full Height,\n" +
-                "else you might miss some outputs.\n" +
-                "Have Fun!");
+                "as I started to learn coding with Python.\n" +
+                "Now, I rewrote every bit and translated it into C# logic.\n\n" +
+                "Dear FABIAN MEINEL,\n" +
+                "Please set your terminal window to full height,\n" +
+                "or else you might miss some outputs.\n" +
+                "Have fun!");
             Write("Continue with any key ==>");
             ReadKey();
             Clear();
 
             WriteLine("This is RPG One. A solo Adventure.\n");
 
-            WriteLine("Welcome, stranger.");
+            WriteLine("Welcome, stranger...");
             WriteLine("------------------------------------------");
             Thread.Sleep(2000);
 
@@ -62,11 +63,19 @@ namespace RPGOne
                 // The player is not in any room
                 WriteLine("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
                 WriteLine("LOOKS LIKE YOU ARE TRAPPED IN THE VOID.\n" +
-                    "SORRY PAL, THE GAME STOPS NOW.");
-                GameOver();
+                    "MAYBE YOU SHOULD LOOK AT YOUR MAP MORE OFTEN!\n" +
+                    "SORRY PAL, I PUSH YOU BACK TO START!.");
+                WriteLine("M'KAY?");
+                Write("Push a button ==> ");
+                ReadKey();
+                player.posX = 0;
+                player.posY = 0;
+                Grid(player);
                 }
             else if(currentRoom.posX == 1 && currentRoom.posY == 1)
                 {
+                //Give current map pointers to map for unhiding new encountered rooms
+                Map.Path(currentRoom.mapX,currentRoom.mapY);
                 Store.status(player);
                 }
             else
@@ -74,6 +83,8 @@ namespace RPGOne
                 Clear();
                 WriteLine("------------------------------------------");
                 currentRoom.Status();
+                //Give current map pointers to map for unhiding new encountered rooms
+                Map.Path(currentRoom.mapX,currentRoom.mapY);
                 foreach(var npc in currentRoom.npcs)
                     {
                     if(npc.friend == false)
@@ -96,17 +107,17 @@ namespace RPGOne
         public static void Options(Room room,Player player)
             {
             WriteLine("MOVE:\n" +
-                "| (N)ORTH\n" +
-                "| (E)AST\n" +
-                "| (S)OUTH\n" +
-                "| (W)EST\n" +
+                "|(N)ORTH\n" +
+                "|(E)AST\n" +
+                "|(S)OUTH\n" +
+                "|(W)EST\n" +
                 "|-------\n" +
-                "| (L)OOK AT ME!\n" +
-                "| SHOW (R)OOM!\n" +
-                "| (M)AP?\n" +
+                "|(L)OOK AT YOUR STATS!\n" +
+                "|(R)OOM CONTENTS!\n" +
+                "|(M)AP!\n" +
+                "|(I)NVENTORY!\n" +
                 "|-------\n" +
-                "| (I)NVENTORY?\n" +
-                "| (Q)UIT GAME\n" +
+                "|(Q)UIT GAME...\n" +
                 "|-------");
 
             //build a stringArray and give it as possible choices.UserInput will check validity
@@ -178,7 +189,11 @@ namespace RPGOne
         public static void GameOver()
             {
             Clear();
-            WriteLine("GOODBYE!\n" +
+            WriteLine("THANK YOU FOR PLAYING\n" +
+                "RPG ONE V1.1\n" +
+                "by Geoffrey Fish 2023\n" +
+                "\n" +
+                "GOODBYE!\n\n" +
                 "PLEASE PRESS ANY KEY TO GET OUT OF HERE.");
             ReadKey();
             Environment.Exit(0);

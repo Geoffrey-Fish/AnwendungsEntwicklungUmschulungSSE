@@ -74,6 +74,14 @@ namespace RPGOne
                     };
             WriteLine($"{enemyAttack[rand.Next(0,enemyAttack.Length)]}");
             }
+        public static void EnemyDeath()
+            {
+            string[] enemyDeath = new string[]
+                {
+                    "UUUAAAARRRGGGLLL","I SEE THE LIGHT---caeinrcet","AT LAST A WORTHY ENEMY*RGRHGRLRGL"
+                    };
+            WriteLine($"{enemyDeath[rand.Next(0,enemyDeath.Length)]}");
+            }
         }
     }
 

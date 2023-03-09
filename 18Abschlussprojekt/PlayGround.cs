@@ -1,5 +1,7 @@
-﻿/*using static System.Console;
-namespace halilistsexy
+﻿///TESTING AREA///
+
+/*using static System.Console;
+namespace playground
     {
     class Programm
         {

@@ -42,6 +42,11 @@ namespace RPGOne
         /// <param name="shop">Shops stats</param>
         public static void Buy(Player player,Store shop)
             {
+            if(shop.armors.Count == 0)
+                {
+                WriteLine("I AM SO SORRY, I AM OUT OF STOCK...");
+                Store.Menu(player,shop);
+                }
             WriteLine(player.name + " IS BUYING SOME ARMOR!" + Environment.NewLine);
 
             for(int i = 0;i < shop.armors.Count;i++)
@@ -51,6 +56,8 @@ namespace RPGOne
                 }
 
             WriteLine($"WHICH NUMBER DO YOU CHOOSE FROM 1 TO {shop.items.Count} ?");
+            Write("==>");
+
             //Minus 1 because of indexing
             var userInput = int.Parse(ReadLine()) - 1;
 
@@ -62,20 +69,23 @@ namespace RPGOne
 
                     player.gp -= shop.armors[userInput].gpValue;
                     shop.gp += shop.armors[userInput].gpValue;
+
                     Armor aChanger = shop.armors[userInput];
                     shop.armors.RemoveAt(userInput);
                     player.armors.Add(aChanger);
+                    Store.Menu(player,shop);
 
                     }
                 else
                     {
                     WriteLine("NOT ENOUGH COINS YOU HAVE!" + Environment.NewLine);
-                    return;//does that work?
+                    Store.Menu(player,shop);
                     }
                 }
             catch(ArgumentOutOfRangeException)
                 {
                 WriteLine("NO ITEM HERE..." + Environment.NewLine);
+                Store.Menu(player,shop);
                 }
             }
 
@@ -90,12 +100,12 @@ namespace RPGOne
             if(player.armors.Count == 0)
                 {
                 WriteLine("YOUR BAG SEEMS EMPTY, MAN!");
-                return;
+                Store.Menu(player,shop);
                 }
             if(shop.gp == 0)
                 {
                 WriteLine("I'M BROKE, BUDDY, SORRY.");
-                return;
+                Store.Menu(player,shop);
                 }
             WriteLine(player.name + " IS SELLING:");
 
@@ -106,6 +116,7 @@ namespace RPGOne
                 }
 
             WriteLine($"WHAT YOU WANNA SELL FROM 1 TO {player.armors.Count} ?");
+            Write("==>");
             //minus 1 because of the indexing
             int userInput = int.Parse(ReadLine()) - 1;
             try //why?
@@ -115,13 +126,16 @@ namespace RPGOne
 
                 player.gp += player.armors[userInput].gpValue;//todo: make a small cut for the clerk, like 0.7 times. need double,though...
                 shop.gp -= player.armors[userInput].gpValue;
+
                 Armor aChanger = player.armors[userInput];
                 player.armors.RemoveAt(userInput);
                 shop.armors.Add(aChanger);
+                Store.Menu(player,shop);
                 }
             catch(ArgumentOutOfRangeException)
                 {
                 WriteLine("NO ITEM HERE...");
+                Store.Menu(player,shop);
                 }
             }
 

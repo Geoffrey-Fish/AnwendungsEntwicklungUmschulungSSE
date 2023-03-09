@@ -17,6 +17,8 @@ namespace RPGOne
             {
             Clear();
             WriteLine($"YOU ARE ATTACKED BY {attacker.name}!");
+            WriteLine($"{attacker.name} SAYS:");
+            Narrative.EnemyAttack();
             Thread.Sleep(2000);
 
             do
@@ -30,7 +32,8 @@ namespace RPGOne
                 defender.xp += attacker.xp;
                 attacker.QueueFree(room);
                 room.npcs.Remove(attacker);
-                Thread.Sleep(1200);
+                WriteLine("MAYBE DRINK A HEALTH POTION...");
+                Thread.Sleep(2000);
                 Clear();
                 Program.Options(room,defender);
                 }
@@ -44,20 +47,19 @@ namespace RPGOne
             ///Who is attacking
             void Initiative(Character att,Player def)
                 {
-
-                WriteLine("-----");
+                WriteLine("----------");
                 // INITIATIVE PHASE
                 if(att.RollDice(0,10 + (att.dex / 9)) >= def.RollDice(0,10 + (def.dex / 5)))
                     {
                     WriteLine($"{att.name} HAS INITIATIVE !");
-                    Thread.Sleep(500);
+                    Thread.Sleep(700);
                     // ATTACKER ATTACK PHASE
                     FoeAttack(att,def);
                     }
                 else
                     {
                     WriteLine($"{def.name} HAS INITIATIVE !");
-                    Thread.Sleep(500);
+                    Thread.Sleep(700);
                     // DEFENDER ATTACK PHASE
                     HeroAttack(def,att);
                     }
@@ -68,9 +70,9 @@ namespace RPGOne
             void FoeAttack(Character attacker,Player defender)
                 {
                 WriteLine();
-                Thread.Sleep(500);
+                Thread.Sleep(700);
                 WriteLine($"{attacker.name} IS ATTACKING {defender.name} !");
-                Thread.Sleep(500);
+                Thread.Sleep(700);
                 if(attacker.RollDice(0,20) >= defender.RollDice(0,30))
                     {
                     int damage = ((attacker.dmg + (attacker.st / 7)) - defender.ar);
@@ -79,14 +81,14 @@ namespace RPGOne
                               $"WITH {damage} DAMAGE!\n" +
                               $"{defender.name} NOW HAS: {defender.hp} HP.");
                     WriteLine("----------");
-                    Thread.Sleep(500);
+                    Thread.Sleep(700);
                     }
                 else
                     {
                     WriteLine($"{attacker.name} MISSED {defender.name}.");
                     }
                 WriteLine("----------");
-                Thread.Sleep(500);
+                Thread.Sleep(700);
                 }
 
 
@@ -94,9 +96,9 @@ namespace RPGOne
             void HeroAttack(Player attacker,Character defender)
                 {
                 WriteLine();
-                Thread.Sleep(500);
+                Thread.Sleep(700);
                 WriteLine($"{attacker.name} IS ATTACKING {defender.name} !");
-                Thread.Sleep(500);
+                Thread.Sleep(700);
                 if(attacker.RollDice(0,30) >= defender.RollDice(0,20))
                     {
                     int damage = ((attacker.dmg + (attacker.st / 5)) - defender.ar);
@@ -105,7 +107,7 @@ namespace RPGOne
                               $"WITH {damage} DAMAGE!\n" +
                               $"{defender.name} NOW HAS: {defender.hp} HP.");
                     WriteLine("----------");
-                    Thread.Sleep(500);
+                    Thread.Sleep(700);
 
                     }
                 else
@@ -113,7 +115,7 @@ namespace RPGOne
                     WriteLine($"{attacker.name} MISSED {defender.name}.");
                     }
                 WriteLine("----------");
-                Thread.Sleep(500);
+                Thread.Sleep(700);
                 }
 
             }
