@@ -13,7 +13,10 @@ namespace SSE
         public string plz;
         public string ort;
 
-        public Adress() { }
+        public Adress() 
+            { 
+            
+            }
 
         }
     }
